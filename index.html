@@ -151,6 +151,11 @@ tr:last-child td { border-bottom: 0; }
 .muh-on .muh-banner { display: flex; }
 .muh-banner a { color: var(--ok); font-weight: 600; }
 .muh-banner button { appearance: none; font: inherit; font-size: 13px; font-weight: 600; color: var(--ok); background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; }
+.bar-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; margin: 14px 0 8px; }
+.seg-ctl { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; padding: 2px; background: var(--bg); }
+.seg-ctl button { appearance: none; border: 0; background: none; font: inherit; font-size: 12px; font-weight: 600; color: var(--muted); padding: 4px 12px; border-radius: 999px; cursor: pointer; }
+.seg-ctl button.on { background: var(--panel); color: var(--fg); box-shadow: 0 1px 2px rgba(0,0,0,.12); }
+.mlegend .n { color: var(--muted); font-weight: 400; }
 /* Fatwa page */
 .timeline { list-style: none; margin: 0; padding: 0 0 0 4px; position: relative; }
 .timeline::before { content: ""; position: absolute; left: 9px; top: 6px; bottom: 6px; width: 2px; background: var(--line); }
@@ -312,13 +317,6 @@ footer a { color: inherit; }
 
   <section id="market">
     <div class="muh-banner"><span>Following <a href="#fatwa">Muhammadiyah's 2026 fatwa</a>: meme coins are counted as <b>Not Halal</b>.</span><button type="button" class="muh-off">Turn off</button></div>
-    <div class="card">
-      <h2>CoinMarketCap top 500, screened</h2>
-      <div class="asof"><span class="live-dot" id="m-dot"></span><span id="m-asof">Loading prices…</span></div>
-      <p class="lede" style="margin-top:0">Of the top <b id="m-coins">—</b> coins by market cap, <b id="m-halal">—</b> are Halal, <b id="m-doubt">—</b> Doubtful, <b id="m-bad">—</b> Not Halal and <b id="m-unr">—</b> Unrated. <b id="m-est">—</b> of those verdicts are estimates that apply HalalScreener's category rules to coins the site hasn't rated.</p>
-      <p class="sub" style="margin:14px 0 6px">Share of top-500 market cap by verdict</p>
-      <div id="m-mcap" role="img" aria-label="Share of top-500 market cap by verdict"></div>
-    </div>
     <div class="controls">
       <input type="search" id="m-q" placeholder="Search coin or ticker" aria-label="Search top 500">
       <select id="m-status" aria-label="Verdict"><option value="">All verdicts</option><option>Halal</option><option>Doubtful</option><option>Not Halal</option><option>Unrated</option></select>
@@ -338,6 +336,19 @@ footer a { color: inherit; }
       </table>
     </div>
     <nav class="pager" id="m-pager" aria-label="Top 500 table pages"></nav>
+    <div class="card" id="market-summary">
+      <h2>CoinMarketCap top 500, screened</h2>
+      <div class="asof"><span class="live-dot" id="m-dot"></span><span id="m-asof">Loading prices…</span></div>
+      <p class="lede" style="margin-top:0">Of the top <b id="m-coins">—</b> coins by market cap, <b id="m-halal">—</b> are Halal, <b id="m-doubt">—</b> Doubtful, <b id="m-bad">—</b> Not Halal and <b id="m-unr">—</b> Unrated. <b id="m-est">—</b> of those verdicts are estimates that apply HalalScreener's category rules to coins the site hasn't rated.</p>
+      <div class="bar-head">
+        <p class="sub" id="m-bar-label" style="margin:0">Share of top-500 coins by verdict</p>
+        <div class="seg-ctl" role="radiogroup" aria-label="Measure bar by">
+          <button type="button" role="radio" class="on" aria-checked="true" data-by="coins">Coins</button>
+          <button type="button" role="radio" aria-checked="false" data-by="mcap">Market cap</button>
+        </div>
+      </div>
+      <div id="m-mcap" role="img" aria-label="Share of top-500 coins by verdict"></div>
+    </div>
   </section>
 
   <section id="fatwa" hidden>
@@ -617,7 +628,7 @@ footer a { color: inherit; }
     document.querySelectorAll('.tab').forEach((b) => b.classList.toggle('on', b.dataset.tab === id));
     document.querySelectorAll('section').forEach((s) => { s.hidden = s.id !== id; });
     if (id === 'market') $('brand').setAttribute('aria-current', 'page'); else $('brand').removeAttribute('aria-current');
-    $('summary').hidden = !['overview', 'category', 'market'].includes(id);
+    $('summary').hidden = !['overview', 'category'].includes(id);
     if (location.hash !== '#' + id) history.pushState(null, '', '#' + id);
   }
   const menu = $('menu'), burger = $('burger');
@@ -737,12 +748,29 @@ footer a { color: inherit; }
     $('m-bad').textContent = fmtInt(cnt('Not Halal')); $('m-unr').textContent = fmtInt(cnt('Unrated'));
     $('f-mtotal').textContent = fmtInt(total); $('f-mhalal').textContent = fmtInt(cnt('Halal'));
     $('m-est').textContent = fmtInt(rows.filter((r) => r.basis === 'Estimate').length);
-    const share = (s) => rows.filter((r) => r.status === s).reduce((a, r) => a + (r.mcap || 0), 0) / cap * 100;
+    // Verdict bar: by number of coins (matches the sentence above) or by share of market cap
     const parts = [['Halal', 'ok'], ['Doubtful', 'warn'], ['Not Halal', 'bad'], ['Unrated', '']];
-    const mtrack = el('div', 'mtrack'), mleg = el('div', 'mlegend');
-    parts.forEach(([s, cls]) => { const v = share(s); if (v > 0) { const seg = el('div', 'seg ' + cls); seg.style.width = v + '%'; mtrack.append(seg); }
-      if (s !== 'Unrated' || v > 0.05) { const sp = el('span'); sp.append(el('i', 'dot ' + cls), el('b', '', v.toFixed(1) + '%'), el('span', '', s)); mleg.append(sp); } });
-    $('m-mcap').append(mtrack, mleg);
+    const capOf = (s) => rows.filter((r) => r.status === s).reduce((a, r) => a + (r.mcap || 0), 0);
+    let barBy = 'coins'; try { if (localStorage.getItem('barBy') === 'mcap') barBy = 'mcap'; } catch (e) {}
+    function drawBar() {
+      const box = $('m-mcap'); box.replaceChildren();
+      const mtrack = el('div', 'mtrack'), mleg = el('div', 'mlegend');
+      parts.forEach(([s, cls]) => {
+        const n = cnt(s), v = barBy === 'coins' ? n / (total || 1) * 100 : capOf(s) / cap * 100;
+        if (v > 0) { const seg = el('div', 'seg ' + cls); seg.style.width = v + '%'; seg.title = s + ': ' + v.toFixed(1) + '%'; mtrack.append(seg); }
+        if (s !== 'Unrated' || n > 0) {
+          const sp = el('span'); sp.append(el('i', 'dot ' + cls), el('b', '', v.toFixed(1) + '%'), el('span', '', s));
+          if (barBy === 'coins') sp.append(el('span', 'n', '(' + fmtInt(n) + ')')); else sp.append(el('span', 'n', '(' + big(capOf(s)) + ')'));
+          mleg.append(sp);
+        }
+      });
+      box.append(mtrack, mleg);
+      const label = barBy === 'coins' ? 'Share of top-500 coins by verdict' : 'Share of top-500 market cap by verdict';
+      $('m-bar-label').textContent = label; box.setAttribute('aria-label', label);
+      document.querySelectorAll('.seg-ctl button').forEach((b) => { const on = b.dataset.by === barBy; b.classList.toggle('on', on); b.setAttribute('aria-checked', String(on)); });
+    }
+    document.querySelectorAll('.seg-ctl button').forEach((b) => b.addEventListener('click', () => { barBy = b.dataset.by; try { localStorage.setItem('barBy', barBy); } catch (e) {} drawBar(); }));
+    drawBar();
 
     const upd = new Date(market.updated); const ageMin = (Date.now() - upd) / 60000;
     const when = upd.toLocaleString(undefined, { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' });
