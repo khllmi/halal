@@ -1,0 +1,167 @@
+slug,category,status,score,basis,reason
+gram,Layer 1 & Layer 2,Halal,85,"HalalScreener verdict, category added by Claude",HalalScreener lists Gram (formerly Toncoin) as Halal 85/100 without a category. Base layer-1 chain.
+hedera,Layer 1 & Layer 2,Halal,85,"HalalScreener verdict, category added by Claude",HalalScreener lists Hedera as Halal 85/100 without a category. Public network whose coin pays fees and secures it.
+cronos,Layer 1 & Layer 2,Halal,85,"HalalScreener verdict, category added by Claude",HalalScreener lists Cronos as Halal 85/100 without a category. Cronos chain's gas coin.
+usd1,Stablecoins,Doubtful,50,Claude estimate,"Fiat- or collateral-backed stablecoin; issuers earn interest on reserves or keep the peg via lending, the site's reason for rating stablecoins Doubtful."
+ripple-usd,Stablecoins,Doubtful,50,Claude estimate,"Fiat- or collateral-backed stablecoin; issuers earn interest on reserves or keep the peg via lending, the site's reason for rating stablecoins Doubtful."
+global-dollar-usdg,Stablecoins,Doubtful,50,Claude estimate,"Fiat- or collateral-backed stablecoin; issuers earn interest on reserves or keep the peg via lending, the site's reason for rating stablecoins Doubtful."
+paypal-usd,Stablecoins,Doubtful,50,Claude estimate,"Fiat- or collateral-backed stablecoin; issuers earn interest on reserves or keep the peg via lending, the site's reason for rating stablecoins Doubtful."
+united-stables,Stablecoins,Doubtful,50,Claude estimate,"Fiat- or collateral-backed stablecoin; issuers earn interest on reserves or keep the peg via lending, the site's reason for rating stablecoins Doubtful."
+usdd,Stablecoins,Doubtful,50,Claude estimate,"Fiat- or collateral-backed stablecoin; issuers earn interest on reserves or keep the peg via lending, the site's reason for rating stablecoins Doubtful."
+trueusd,Stablecoins,Doubtful,50,Claude estimate,"Fiat- or collateral-backed stablecoin; issuers earn interest on reserves or keep the peg via lending, the site's reason for rating stablecoins Doubtful."
+euro-coin,Stablecoins,Doubtful,50,Claude estimate,"Fiat- or collateral-backed stablecoin; issuers earn interest on reserves or keep the peg via lending, the site's reason for rating stablecoins Doubtful."
+first-digital-usd,Stablecoins,Doubtful,50,Claude estimate,"Fiat- or collateral-backed stablecoin; issuers earn interest on reserves or keep the peg via lending, the site's reason for rating stablecoins Doubtful."
+open-usd,Stablecoins,Doubtful,50,Claude estimate,"Fiat- or collateral-backed stablecoin; issuers earn interest on reserves or keep the peg via lending, the site's reason for rating stablecoins Doubtful."
+usual-usd,Stablecoins,Doubtful,50,Claude estimate,"Fiat- or collateral-backed stablecoin; issuers earn interest on reserves or keep the peg via lending, the site's reason for rating stablecoins Doubtful."
+frax,Stablecoins,Doubtful,50,Claude estimate,"Fiat- or collateral-backed stablecoin; issuers earn interest on reserves or keep the peg via lending, the site's reason for rating stablecoins Doubtful."
+binance-usd,Stablecoins,Doubtful,50,Claude estimate,"Fiat- or collateral-backed stablecoin; issuers earn interest on reserves or keep the peg via lending, the site's reason for rating stablecoins Doubtful."
+usdk,Stablecoins,Doubtful,50,Claude estimate,"Fiat- or collateral-backed stablecoin; issuers earn interest on reserves or keep the peg via lending, the site's reason for rating stablecoins Doubtful."
+lusd,Stablecoins,Doubtful,50,Claude estimate,"Fiat- or collateral-backed stablecoin; issuers earn interest on reserves or keep the peg via lending, the site's reason for rating stablecoins Doubtful."
+electronic-usd,Stablecoins,Doubtful,50,Claude estimate,"Fiat- or collateral-backed stablecoin; issuers earn interest on reserves or keep the peg via lending, the site's reason for rating stablecoins Doubtful."
+celo-dollar,Stablecoins,Doubtful,50,Claude estimate,"Fiat- or collateral-backed stablecoin; issuers earn interest on reserves or keep the peg via lending, the site's reason for rating stablecoins Doubtful."
+gho,Stablecoins,Doubtful,50,Claude estimate,"Aave's stablecoin, minted against collateral; treated like DAI and crvUSD, which the site rates Doubtful."
+liquity-v2,Stablecoins,Doubtful,50,Claude estimate,"Stablecoin minted against ETH collateral; treated like DAI, which the site rates Doubtful."
+ampleforth,Stablecoins,Doubtful,50,Claude estimate,Algorithmic rebasing dollar-like token; the site rates algorithmic stablecoins Doubtful.
+ethena-usde,"Lending, Yield & Derivatives",Not Halal,0,Claude estimate,"Synthetic or yield-bearing dollar whose return comes from funding rates, lending or Treasury interest, like BFUSD and USDu (Not Halal on the site)."
+falcon-finance,"Lending, Yield & Derivatives",Not Halal,0,Claude estimate,"Synthetic or yield-bearing dollar whose return comes from funding rates, lending or Treasury interest, like BFUSD and USDu (Not Halal on the site)."
+aegis-yusd,"Lending, Yield & Derivatives",Not Halal,0,Claude estimate,"Synthetic or yield-bearing dollar whose return comes from funding rates, lending or Treasury interest, like BFUSD and USDu (Not Halal on the site)."
+solstice-eusx,"Lending, Yield & Derivatives",Not Halal,0,Claude estimate,"Synthetic or yield-bearing dollar whose return comes from funding rates, lending or Treasury interest, like BFUSD and USDu (Not Halal on the site)."
+falcon-finance-ff,"Lending, Yield & Derivatives",Not Halal,0,Claude estimate,Falcon Finance issues a synthetic dollar whose staked version pays yield from funding-rate and other strategies.
+sky,"Lending, Yield & Derivatives",Not Halal,0,Claude estimate,"Governs Sky (formerly Maker), which mints dollars against collateral for stability fees and pays a savings rate: interest-based, like Aave and Compound."
+just,"Lending, Yield & Derivatives",Not Halal,0,Claude estimate,"JUST's main product is JustLend, an interest-based lending market on TRON."
+morpho,"Lending, Yield & Derivatives",Not Halal,0,Claude estimate,"Morpho is an interest-based lending protocol, like Aave and Compound (Not Halal on the site)."
+instadapp,"Lending, Yield & Derivatives",Not Halal,0,Claude estimate,"Fluid is an interest-based lending protocol, like Aave and Compound (Not Halal on the site)."
+venus,"Lending, Yield & Derivatives",Not Halal,0,Claude estimate,"Venus is an interest-based lending protocol, like Aave and Compound (Not Halal on the site)."
+evaa-protocol,"Lending, Yield & Derivatives",Not Halal,0,Claude estimate,"EVAA is an interest-based lending protocol, like Aave and Compound (Not Halal on the site)."
+lista-dao,"Lending, Yield & Derivatives",Not Halal,0,Claude estimate,"Lista DAO is an interest-based lending protocol, like Aave and Compound (Not Halal on the site)."
+spark,"Lending, Yield & Derivatives",Not Halal,0,Claude estimate,"Spark is an interest-based lending protocol, like Aave and Compound (Not Halal on the site)."
+nexo,"Lending, Yield & Derivatives",Not Halal,0,Claude estimate,Crypto lending platform with interest-paying earn accounts and loans.
+coindepo,"Lending, Yield & Derivatives",Not Halal,0,Claude estimate,Platform built around interest-paying crypto deposit accounts.
+maple-finance,"Lending, Yield & Derivatives",Not Halal,0,Claude estimate,Maple runs institutional lending pools that pay interest.
+centrifuge,"Lending, Yield & Derivatives",Not Halal,0,Claude estimate,"Tokenises real-world credit (invoices, loans) into interest-bearing pools."
+huma-finance,"Lending, Yield & Derivatives",Not Halal,0,Claude estimate,PayFi lending: finances receivables and pays lenders a yield.
+venus-busd,"Lending, Yield & Derivatives",Not Halal,0,Claude estimate,Interest-bearing deposit receipt from the Venus lending market.
+aster,"Lending, Yield & Derivatives",Not Halal,0,Claude estimate,Perpetual-futures / derivatives exchange; the site rates perp DEX tokens such as Hyperliquid and GMX Not Halal.
+lighter,"Lending, Yield & Derivatives",Not Halal,0,Claude estimate,Perpetual-futures / derivatives exchange; the site rates perp DEX tokens such as Hyperliquid and GMX Not Halal.
+edgex,"Lending, Yield & Derivatives",Not Halal,0,Claude estimate,Perpetual-futures / derivatives exchange; the site rates perp DEX tokens such as Hyperliquid and GMX Not Halal.
+dydx-chain,"Lending, Yield & Derivatives",Not Halal,0,Claude estimate,Perpetual-futures / derivatives exchange; the site rates perp DEX tokens such as Hyperliquid and GMX Not Halal.
+derive,"Lending, Yield & Derivatives",Not Halal,0,Claude estimate,Perpetual-futures / derivatives exchange; the site rates perp DEX tokens such as Hyperliquid and GMX Not Halal.
+mango-markets,"Lending, Yield & Derivatives",Not Halal,0,Claude estimate,Perpetual-futures / derivatives exchange; the site rates perp DEX tokens such as Hyperliquid and GMX Not Halal.
+synthetix,"Lending, Yield & Derivatives",Not Halal,0,Claude estimate,Perpetual-futures / derivatives exchange; the site rates perp DEX tokens such as Hyperliquid and GMX Not Halal.
+jupiter-perps-lp,"Lending, Yield & Derivatives",Not Halal,0,Claude estimate,Liquidity token for Jupiter's perpetual-futures pool; earns from leveraged traders' fees and losses.
+ondo-us-dollar-yield,Tokenized & Wrapped,Not Halal,0,Claude estimate,Tokenised US Treasuries paying interest; the site rates tokenised debt Not Halal.
+rwusd,Tokenized & Wrapped,Not Halal,0,Claude estimate,"Tagged as tokenised Treasury bonds; tokenised debt pays interest, so Not Halal on the site's rule."
+invesco-qqq-trust-tokenized-bstocks,Tokenized & Wrapped,Doubtful,50,Claude estimate,"Tokenised stock or ETF; the site rates tokenised stocks Doubtful (status should follow the underlying, custody adds uncertainty)."
+spacex-pre-ipo-stock-republic,Tokenized & Wrapped,Doubtful,50,Claude estimate,"Tokenised stock or ETF; the site rates tokenised stocks Doubtful (status should follow the underlying, custody adds uncertainty)."
+xiaomi-tokenized-stock-xstock,Tokenized & Wrapped,Doubtful,50,Claude estimate,"Tokenised stock or ETF; the site rates tokenised stocks Doubtful (status should follow the underlying, custody adds uncertainty)."
+pop-mart-international-tokenized-stock-xstock,Tokenized & Wrapped,Doubtful,50,Claude estimate,"Tokenised stock or ETF; the site rates tokenised stocks Doubtful (status should follow the underlying, custody adds uncertainty)."
+tencent-tokenized-stock-xstock,Tokenized & Wrapped,Doubtful,50,Claude estimate,"Tokenised stock or ETF; the site rates tokenised stocks Doubtful (status should follow the underlying, custody adds uncertainty)."
+bnb-standard-corporation-tokenized-bstocks,Tokenized & Wrapped,Doubtful,50,Claude estimate,"Tokenised stock or ETF; the site rates tokenised stocks Doubtful (status should follow the underlying, custody adds uncertainty)."
+predict-fun,Gambling & Prediction,Not Halal,0,Claude estimate,Prediction-market token; the site rates betting and prediction markets Not Halal (maisir).
+bitget-token-new,Payments & Exchange,Halal,85,Claude estimate,"Exchange token for fee discounts and access, like BNB and OKB (Halal on the site); stricter scholars look through to the exchange's margin products."
+kucoin-token,Payments & Exchange,Halal,85,Claude estimate,"Exchange token for fee discounts and access, like BNB and OKB (Halal on the site); stricter scholars look through to the exchange's margin products."
+gatetoken,Payments & Exchange,Halal,85,Claude estimate,"Exchange token for fee discounts and access, like BNB and OKB (Halal on the site); stricter scholars look through to the exchange's margin products."
+htx,Payments & Exchange,Halal,85,Claude estimate,"Exchange token for fee discounts and access, like BNB and OKB (Halal on the site); stricter scholars look through to the exchange's margin products."
+vision-token,Payments & Exchange,Halal,85,Claude estimate,"Exchange token for fee discounts and access, like BNB and OKB (Halal on the site); stricter scholars look through to the exchange's margin products."
+swissborg,Payments & Exchange,Halal,85,Claude estimate,"Exchange token for fee discounts and access, like BNB and OKB (Halal on the site); stricter scholars look through to the exchange's margin products. SwissBorg also offers yield products, which the token can boost."
+ftx-token,Payments & Exchange,Doubtful,50,Claude estimate,"Exchange token of FTX, which no longer operates; with no working utility, trading it is pure speculation."
+telcoin,Payments & Exchange,Halal,85,Claude estimate,"Payment or remittance token that settles transfers, which the site treats as Halal."
+stronghold-token,Payments & Exchange,Halal,85,Claude estimate,"Payment or remittance token that settles transfers, which the site treats as Halal."
+velo,Payments & Exchange,Halal,85,Claude estimate,"Payment or remittance token that settles transfers, which the site treats as Halal."
+alchemy-pay,Payments & Exchange,Halal,85,Claude estimate,"Payment or remittance token that settles transfers, which the site treats as Halal."
+payprotocol,Payments & Exchange,Halal,85,Claude estimate,"Payment or remittance token that settles transfers, which the site treats as Halal."
+uquid-coin,Payments & Exchange,Halal,85,Claude estimate,"Payment or remittance token that settles transfers, which the site treats as Halal."
+mantle,Layer 1 & Layer 2,Halal,85,Claude estimate,"Base chain or scaling network whose coin pays fees and secures it, like the site's Layer 1 & 2 group."
+ethereum-classic,Layer 1 & Layer 2,Halal,85,Claude estimate,"Base chain or scaling network whose coin pays fees and secures it, like the site's Layer 1 & 2 group."
+xdc-network,Layer 1 & Layer 2,Halal,85,Claude estimate,"Base chain or scaling network whose coin pays fees and secures it, like the site's Layer 1 & 2 group."
+stacks,Layer 1 & Layer 2,Halal,85,Claude estimate,"Base chain or scaling network whose coin pays fees and secures it, like the site's Layer 1 & 2 group."
+flare,Layer 1 & Layer 2,Halal,85,Claude estimate,"Base chain or scaling network whose coin pays fees and secures it, like the site's Layer 1 & 2 group."
+celestia,Layer 1 & Layer 2,Halal,85,Claude estimate,"Base chain or scaling network whose coin pays fees and secures it, like the site's Layer 1 & 2 group."
+bitcoin-sv,Layer 1 & Layer 2,Halal,85,Claude estimate,"Base chain or scaling network whose coin pays fees and secures it, like the site's Layer 1 & 2 group."
+starknet-token,Layer 1 & Layer 2,Halal,85,Claude estimate,"Base chain or scaling network whose coin pays fees and secures it, like the site's Layer 1 & 2 group."
+iota,Layer 1 & Layer 2,Halal,85,Claude estimate,"Base chain or scaling network whose coin pays fees and secures it, like the site's Layer 1 & 2 group."
+neo,Layer 1 & Layer 2,Halal,85,Claude estimate,"Base chain or scaling network whose coin pays fees and secures it, like the site's Layer 1 & 2 group."
+ecash,Layer 1 & Layer 2,Halal,85,Claude estimate,"Base chain or scaling network whose coin pays fees and secures it, like the site's Layer 1 & 2 group."
+zksync,Layer 1 & Layer 2,Halal,85,Claude estimate,"Base chain or scaling network whose coin pays fees and secures it, like the site's Layer 1 & 2 group."
+multiversx-egld,Layer 1 & Layer 2,Halal,85,Claude estimate,"Base chain or scaling network whose coin pays fees and secures it, like the site's Layer 1 & 2 group."
+mina,Layer 1 & Layer 2,Halal,85,Claude estimate,"Base chain or scaling network whose coin pays fees and secures it, like the site's Layer 1 & 2 group."
+linea,Layer 1 & Layer 2,Halal,85,Claude estimate,"Base chain or scaling network whose coin pays fees and secures it, like the site's Layer 1 & 2 group."
+somnia,Layer 1 & Layer 2,Halal,85,Claude estimate,"Base chain or scaling network whose coin pays fees and secures it, like the site's Layer 1 & 2 group."
+celo,Layer 1 & Layer 2,Halal,85,Claude estimate,"Base chain or scaling network whose coin pays fees and secures it, like the site's Layer 1 & 2 group."
+ronin,Layer 1 & Layer 2,Halal,85,Claude estimate,"Base chain or scaling network whose coin pays fees and secures it, like the site's Layer 1 & 2 group."
+flow,Layer 1 & Layer 2,Halal,85,Claude estimate,"Base chain or scaling network whose coin pays fees and secures it, like the site's Layer 1 & 2 group."
+newton,Layer 1 & Layer 2,Halal,85,Claude estimate,"Base chain or scaling network whose coin pays fees and secures it, like the site's Layer 1 & 2 group."
+open-campus,Layer 1 & Layer 2,Halal,85,Claude estimate,"Base chain or scaling network whose coin pays fees and secures it, like the site's Layer 1 & 2 group."
+pearlresearch,Layer 1 & Layer 2,Halal,85,Claude estimate,"Proof-of-work chain; coin pays fees and secures the chain. Possibly the same project as HalalScreener's Pearl (PRL), which is Halal."
+quant,Infrastructure & AI,Halal,85,Claude estimate,"Token pays for a real network service (data, compute, storage, connectivity or security), like the site's Infrastructure & AI group."
+worldcoin-org,Infrastructure & AI,Halal,85,Claude estimate,"Token pays for a real network service (data, compute, storage, connectivity or security), like the site's Infrastructure & AI group."
+layerzero,Infrastructure & AI,Halal,85,Claude estimate,"Token pays for a real network service (data, compute, storage, connectivity or security), like the site's Infrastructure & AI group."
+ethereum-name-service,Infrastructure & AI,Halal,85,Claude estimate,"Token pays for a real network service (data, compute, storage, connectivity or security), like the site's Infrastructure & AI group."
+trust-wallet-token,Infrastructure & AI,Halal,85,Claude estimate,"Token pays for a real network service (data, compute, storage, connectivity or security), like the site's Infrastructure & AI group."
+basic-attention-token,Infrastructure & AI,Halal,85,Claude estimate,"Token pays for a real network service (data, compute, storage, connectivity or security), like the site's Infrastructure & AI group."
+livepeer,Infrastructure & AI,Halal,85,Claude estimate,"Token pays for a real network service (data, compute, storage, connectivity or security), like the site's Infrastructure & AI group."
+dgrid-ai,Infrastructure & AI,Halal,85,Claude estimate,"Token pays for a real network service (data, compute, storage, connectivity or security), like the site's Infrastructure & AI group."
+alaya-ai,Infrastructure & AI,Halal,85,Claude estimate,"Token pays for a real network service (data, compute, storage, connectivity or security), like the site's Infrastructure & AI group."
+ritual,Infrastructure & AI,Halal,85,Claude estimate,"Token pays for a real network service (data, compute, storage, connectivity or security), like the site's Infrastructure & AI group."
+wormhole,Infrastructure & AI,Halal,85,Claude estimate,"Token pays for a real network service (data, compute, storage, connectivity or security), like the site's Infrastructure & AI group."
+theta-fuel,Infrastructure & AI,Halal,85,Claude estimate,"Token pays for a real network service (data, compute, storage, connectivity or security), like the site's Infrastructure & AI group."
+rsk-infrastructure-framework,Infrastructure & AI,Halal,85,Claude estimate,"Token pays for a real network service (data, compute, storage, connectivity or security), like the site's Infrastructure & AI group."
+goplus-security,Infrastructure & AI,Halal,85,Claude estimate,"Token pays for a real network service (data, compute, storage, connectivity or security), like the site's Infrastructure & AI group."
+helium,Infrastructure & AI,Halal,85,Claude estimate,"Token pays for a real network service (data, compute, storage, connectivity or security), like the site's Infrastructure & AI group."
+trusta-ai,Infrastructure & AI,Halal,85,Claude estimate,"Token pays for a real network service (data, compute, storage, connectivity or security), like the site's Infrastructure & AI group."
+storx-network,Infrastructure & AI,Halal,85,Claude estimate,"Token pays for a real network service (data, compute, storage, connectivity or security), like the site's Infrastructure & AI group."
+axelar,Infrastructure & AI,Halal,85,Claude estimate,"Token pays for a real network service (data, compute, storage, connectivity or security), like the site's Infrastructure & AI group."
+arcium,Infrastructure & AI,Halal,85,Claude estimate,"Token pays for a real network service (data, compute, storage, connectivity or security), like the site's Infrastructure & AI group."
+infinity-ground,Infrastructure & AI,Halal,85,Claude estimate,"Token pays for a real network service (data, compute, storage, connectivity or security), like the site's Infrastructure & AI group."
+sharex-network,Infrastructure & AI,Halal,85,Claude estimate,"Token pays for a real network service (data, compute, storage, connectivity or security), like the site's Infrastructure & AI group."
+ankr,Infrastructure & AI,Halal,85,Claude estimate,"Token pays for a real network service (data, compute, storage, connectivity or security), like the site's Infrastructure & AI group."
+mask-network,Infrastructure & AI,Halal,85,Claude estimate,"Token pays for a real network service (data, compute, storage, connectivity or security), like the site's Infrastructure & AI group."
+chainbase,Infrastructure & AI,Halal,85,Claude estimate,"Token pays for a real network service (data, compute, storage, connectivity or security), like the site's Infrastructure & AI group."
+band-protocol,Infrastructure & AI,Halal,85,Claude estimate,"Token pays for a real network service (data, compute, storage, connectivity or security), like the site's Infrastructure & AI group."
+proprietary-trading-network,Infrastructure & AI,Halal,85,Claude estimate,"Bittensor subnet that HalalScreener lists as Vanta Network (SN8), Halal; CoinMarketCap uses a different ticker."
+numeraire,Infrastructure & AI,Doubtful,50,Claude estimate,Data scientists stake NMR on their models and lose it if predictions are poor; some see that as a wager.
+apecoin-ape,Gaming & NFT,Halal,85,Claude estimate,Game or NFT platform token used inside a game economy; the site says gaming isn't gambling.
+mines-of-dalarnia,Gaming & NFT,Halal,85,Claude estimate,Game or NFT platform token used inside a game economy; the site says gaming isn't gambling.
+titans-tap,Gaming & NFT,Halal,85,Claude estimate,Game or NFT platform token used inside a game economy; the site says gaming isn't gambling.
+metaplex,Gaming & NFT,Halal,85,Claude estimate,Game or NFT platform token used inside a game economy; the site says gaming isn't gambling.
+deapcoin,Gaming & NFT,Halal,85,Claude estimate,Game or NFT platform token used inside a game economy; the site says gaming isn't gambling.
+collector-crypt,Gaming & NFT,Doubtful,50,Claude estimate,"Tokenised trading cards sold partly through random gacha packs, which raises gambling (maisir) concerns."
+ore-new,Gaming & NFT,Doubtful,50,Claude estimate,"Solana mining token whose rewards are handed out in random rounds, which raises gambling concerns."
+aerodrome-finance,DeFi & Staking,Doubtful,50,Claude estimate,"DEX, liquid staking or other mixed DeFi mechanism, like Sushi, Jupiter and Lido (Doubtful on the site)."
+raydium,DeFi & Staking,Doubtful,50,Claude estimate,"DEX, liquid staking or other mixed DeFi mechanism, like Sushi, Jupiter and Lido (Doubtful on the site)."
+curve-dao-token,DeFi & Staking,Doubtful,50,Claude estimate,"DEX, liquid staking or other mixed DeFi mechanism, like Sushi, Jupiter and Lido (Doubtful on the site)."
+ether-fi-ethfi,DeFi & Staking,Doubtful,50,Claude estimate,"DEX, liquid staking or other mixed DeFi mechanism, like Sushi, Jupiter and Lido (Doubtful on the site)."
+sun-token,DeFi & Staking,Doubtful,50,Claude estimate,"DEX, liquid staking or other mixed DeFi mechanism, like Sushi, Jupiter and Lido (Doubtful on the site)."
+thorchain,DeFi & Staking,Doubtful,50,Claude estimate,"DEX, liquid staking or other mixed DeFi mechanism, like Sushi, Jupiter and Lido (Doubtful on the site)."
+jito,DeFi & Staking,Doubtful,50,Claude estimate,"DEX, liquid staking or other mixed DeFi mechanism, like Sushi, Jupiter and Lido (Doubtful on the site)."
+1inch,DeFi & Staking,Doubtful,50,Claude estimate,"DEX, liquid staking or other mixed DeFi mechanism, like Sushi, Jupiter and Lido (Doubtful on the site)."
+dexe,DeFi & Staking,Doubtful,50,Claude estimate,"DEX, liquid staking or other mixed DeFi mechanism, like Sushi, Jupiter and Lido (Doubtful on the site)."
+reserve-rights,DeFi & Staking,Doubtful,50,Claude estimate,"DEX, liquid staking or other mixed DeFi mechanism, like Sushi, Jupiter and Lido (Doubtful on the site)."
+orca,DeFi & Staking,Doubtful,50,Claude estimate,"DEX, liquid staking or other mixed DeFi mechanism, like Sushi, Jupiter and Lido (Doubtful on the site)."
+bitway-btw,DeFi & Staking,Doubtful,50,Claude estimate,"DEX, liquid staking or other mixed DeFi mechanism, like Sushi, Jupiter and Lido (Doubtful on the site)."
+magma-finance,DeFi & Staking,Doubtful,50,Claude estimate,"DEX, liquid staking or other mixed DeFi mechanism, like Sushi, Jupiter and Lido (Doubtful on the site)."
+lombard,DeFi & Staking,Doubtful,50,Claude estimate,"DEX, liquid staking or other mixed DeFi mechanism, like Sushi, Jupiter and Lido (Doubtful on the site)."
+sanctum-cloud,DeFi & Staking,Doubtful,50,Claude estimate,"DEX, liquid staking or other mixed DeFi mechanism, like Sushi, Jupiter and Lido (Doubtful on the site)."
+dodo,DeFi & Staking,Doubtful,50,Claude estimate,"DEX, liquid staking or other mixed DeFi mechanism, like Sushi, Jupiter and Lido (Doubtful on the site)."
+bio,DeFi & Staking,Doubtful,50,Claude estimate,"DEX, liquid staking or other mixed DeFi mechanism, like Sushi, Jupiter and Lido (Doubtful on the site)."
+creditcoin,DeFi & Staking,Doubtful,50,Claude estimate,Records loan histories for credit markets whose loans carry interest; mixed purpose.
+midnight-network,Privacy Coins,Doubtful,50,Claude estimate,Privacy-focused chain built around shielded transactions; the site rates privacy coins Doubtful.
+beldex,Privacy Coins,Doubtful,50,Claude estimate,Privacy coin with anonymous transactions; the site rates privacy coins Doubtful.
+mowcat,Meme Coins,Doubtful,50,Claude estimate,Meme or launchpad token whose value rests on sentiment; the site rates meme coins Doubtful.
+jelly-my-jelly,Meme Coins,Doubtful,50,Claude estimate,Meme or launchpad token whose value rests on sentiment; the site rates meme coins Doubtful.
+skyai,Meme Coins,Doubtful,50,Claude estimate,Meme or launchpad token whose value rests on sentiment; the site rates meme coins Doubtful.
+stonk-fun,Meme Coins,Doubtful,50,Claude estimate,Meme or launchpad token whose value rests on sentiment; the site rates meme coins Doubtful.
+pons,,Unrated,,Claude estimate,Not enough public information for Claude to place it in a category.
+grow,,Unrated,,Claude estimate,Not enough public information for Claude to place it in a category.
+dohrnii,,Unrated,,Claude estimate,Not enough public information for Claude to place it in a category.
+bnb48-club-token,,Unrated,,Claude estimate,Not enough public information for Claude to place it in a category.
+project-ailey,,Unrated,,Claude estimate,Not enough public information for Claude to place it in a category.
+joseon-mun,,Unrated,,Claude estimate,Not enough public information for Claude to place it in a category.
+mindwavedao,,Unrated,,Claude estimate,Not enough public information for Claude to place it in a category.
+tronbank,,Unrated,,Claude estimate,Not enough public information for Claude to place it in a category.
+escointoken,,Unrated,,Claude estimate,Not enough public information for Claude to place it in a category.
+supertrust,,Unrated,,Claude estimate,Not enough public information for Claude to place it in a category.
+vitalum,,Unrated,,Claude estimate,Not enough public information for Claude to place it in a category.
+bim,,Unrated,,Claude estimate,Not enough public information for Claude to place it in a category.
+aivive,,Unrated,,Claude estimate,Not enough public information for Claude to place it in a category.
+ravedao,,Unrated,,Claude estimate,Not enough public information for Claude to place it in a category.

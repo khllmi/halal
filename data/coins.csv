@@ -1,0 +1,691 @@
+name,ticker,category,status,score,source_url
+Bitcoin,BTC,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Ethereum,ETH,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Solana,SOL,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+TRON,TRX,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Cardano,ADA,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Stellar,XLM,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Bitcoin Cash,BCH,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+NEAR Protocol,NEAR,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Litecoin,LTC,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Canton,CC,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Avalanche,AVAX,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Sui,SUI,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Polkadot,DOT,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Internet Computer,ICP,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Arbitrum,ARB,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+POL (ex-MATIC),POL,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Kaspa,KAS,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Pi Network,PI,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Algorand,ALGO,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Cosmos Hub,ATOM,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Injective,INJ,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Pearl,PRL,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Stable,STABLE,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+VeChain,VET,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Aptos,APT,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Kite,KITE,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Sei,SEI,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Unibase,UB,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Tezos,XTZ,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Ozone Chain,OZO,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Plasma,XPL,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Beam,BEAM,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Kaia,KAIA,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Optimism,OP,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Monad,MON,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Conflux,CFX,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Sonic,S,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Onyxcoin,XCN,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Sentient,SENT,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Vaulta,A,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Chiliz,CHZ,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Railgun,RAIL,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+AIOZ Network,AIOZ,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Prom,PROM,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+SuperVerse,SUPER,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Immutable,IMX,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+0G,0G,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Quantum Resistant Ledger,QRL,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Horizen,ZEN,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+SOON,SOON,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Qtum,QTUM,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+ADI,ADI,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+ONEchain,CROSS,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+ONEchain,ONE,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Gas,GAS,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+WEMIX,WEMIX,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Pharos,PROS,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+peaq,PEAQ,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Holo,HOT,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+APEX,AP3X,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+MegaETH,MEGA,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Kusama,KSM,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Metal Blockchain,METAL,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+DigiByte,DGB,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Nesa,NES,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+XPR Network,XPR,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Qubic,QUBIC,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+GAL (migrated to Gravity),GAL,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+ZIG Finance,ZIG,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+ZetaChain,ZETA,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+ALEO,ALEO,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+VeThor,VTHO,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Data Network,IP,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Merlin Chain,MERL,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Nexpace,NXPC,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Concordium,CCD,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Lisk,LSK,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Nervos Network,CKB,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Nano,XNO,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Astar,ASTR,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Aztec,AZTEC,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Venom,VENOM,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Enjin Coin,ENJ,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Space and Time,SXT,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+aelf,ELF,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+ARIA NETWORK,ARIAX,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Oasis,ROSE,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Kava,KAVA,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Abey,ABEY,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Ontology,ONT,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Humanity,H,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Data Network,DATA,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+KUB Coin,KUB,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Nexus,NEX,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Swarm Network,TRUTH,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Status,SNT,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Irys,IRYS,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+OpenLedger,OPEN,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Siacoin,SC,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+PHALA,PHA,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Fractal Bitcoin,FB,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Unipoly,UNP,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Ontology Gas,ONG,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+ARK,ARK,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Succinct,PROVE,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+COTI,COTI,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Electroneum,ETN,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+B3 (Base),B3,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Sign,SIGN,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+BORA,BORA,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Movement,MOVE,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Initia,INIT,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Anoma,XAN,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Chia,XCH,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+IOST,IOST,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+XPhere,XP,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Manta Network,MANTA,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Zora,ZORA,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Ardor,ARDR,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Vana,VANA,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Gravity (by Galxe),G,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+SKALE,SKL,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Bityuan,BTY,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+The Innovation Game,TIG,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Waves,WAVES,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Lagrange,LA,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Orochi Network,ON,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Verus,VRSC,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+NaoX Protocol,NAORIS,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Taiko,TAIKO,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Core,CORE,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+CYBER,CYBER,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Islamic Coin,ISLM,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+CoinEx,CET,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Canopy,CNPY,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+UCHAIN,UCN,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+AtomOne,ATONE,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Constellation,DAG,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Cysic,CYS,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Octra,OCT,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Quai Network,QUAI,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Gunz,GUN,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+ICON,ICX,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+TOMI,TOMI,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+IGRA,IGRA,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+INI,INI,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+c8ntinuum,CTM,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+BDTCOIN,BDTC,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+DeFi Kingdoms,JEWEL,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+BOT,BOT,Layer 1 & Layer 2,Halal,85,https://halalscreener.app/en/halal-crypto/layer-1-and-layer-2
+Chainlink,LINK,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Bittensor,TAO,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Venice Token,VVV,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Render,RENDER,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Filecoin,FIL,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Pyth Network,PYTH,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Akedo,AKE,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Artificial Superintelligence Alliance,FET,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Virtuals Protocol,VIRTUAL,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Grass,GRASS,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Pieverse,PIEVERSE,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+BitTorrent,BTT,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+The Graph,GRT,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Arweave,AR,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+JasmyCoin,JASMY,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Akash Network,AKT,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Theta Network,THETA,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Zama,ZAMA,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+DoubleZero,2Z,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Geodnet,GEOD,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+SafePal,SFP,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+lium,SN51,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Golem,GLM,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Aethir,ATH,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Quack AI,Q,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Seeker,SKR,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Chutes,SN64,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+deBridge,DBR,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Walrus,WAL,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Safe,SAFE,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Targon,SN4,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+UnifAI Network,UAI,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+UnityWallet Token,UNT,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Espresso,ESP,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+iExec RLC,RLC,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+KAITO,KAITO,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+TAGGER,TAG,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+EXOD,EXOD,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Allora,ALLO,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+AI Rig Complex,ARC,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Swop,SWOP,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Diem,DIEM,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+io.net,IO,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+ChainOpera AI,COAI,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Score,SN44,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+BNB Attestation Service,BAS,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+EfficientFrontier,SN53,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+affine,SN120,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+XYO Network,XYO,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Dolphin,POD,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Holoworld,HOLO,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Talus,US,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Acurast,ACU,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+DAPPOS,DOS,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Vanta Network,SN8,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Nillion,NIL,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Alchemist AI,ALCH,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Synapse,SYN,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Orbio.so,ORBIO,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+templar,SN3,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Moca Network,MOCA,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Auki,AUKI,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Sahara AI,SAHARA,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+XPIN Network,XPIN,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Powerledger,POWR,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+BankrCoin,BNKR,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+iota,SN9,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+SQD,SQD,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+SentismAI,SENTIS,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+OpenGradient,OPG,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Across Protocol,ACX,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Matrix,MTX,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+BitDCA,BDCA,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Janction,JCT,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+KGeN,KGEN,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Victoria VR,VR,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Billions Network,BILL,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Impossible Cloud Network Token,ICNT,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+OKZOO,AIOT,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+The Interfold,FOLD,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Dual,DUAL,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+World Mobile Token,WMTX,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+MEET48,IDOL,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Freysa AI,FAI,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Biconomy,BICO,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Enso,ENSO,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Manadia,UMXM,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Fabric Protocol,ROBO,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+sapien,SAPIEN,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+OpenServ,SERV,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Cluster Protocol,CP,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Ridges AI,SN62,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Bless,BLESS,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Recall,RECALL,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+OlaXBT,AIO,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+PlaysOut,PLAY,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+TAC,TAC,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+QAIT,QAIT,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Everlyn,LYN,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+V.I.T.R.I.O.L. Network,VIT,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Permacast,PWT,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+SingularityNET,AGIX,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Magic Hash,MHA,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+The Game Company,GMRT,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+ViciCoin,VCNT,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Law Blocks AI,LBT,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Omni Network [Old],OMNI,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+Starpower,STAR,Infrastructure & AI,Halal,85,https://halalscreener.app/en/halal-crypto/infrastructure-and-ai
+BNB,BNB,Payments & Exchange,Halal,85,https://halalscreener.app/en/halal-crypto/payments-and-exchange-tokens
+XRP,XRP,Payments & Exchange,Halal,85,https://halalscreener.app/en/halal-crypto/payments-and-exchange-tokens
+LEO Token,LEO,Payments & Exchange,Halal,85,https://halalscreener.app/en/halal-crypto/payments-and-exchange-tokens
+Uniswap,UNI,Payments & Exchange,Halal,85,https://halalscreener.app/en/halal-crypto/payments-and-exchange-tokens
+OKB,OKB,Payments & Exchange,Halal,85,https://halalscreener.app/en/halal-crypto/payments-and-exchange-tokens
+Backpack,BP,Payments & Exchange,Halal,85,https://halalscreener.app/en/halal-crypto/payments-and-exchange-tokens
+BTSE Token,BTSE,Payments & Exchange,Halal,85,https://halalscreener.app/en/halal-crypto/payments-and-exchange-tokens
+MX,MX,Payments & Exchange,Halal,85,https://halalscreener.app/en/halal-crypto/payments-and-exchange-tokens
+Ozapay,OZA,Payments & Exchange,Halal,85,https://halalscreener.app/en/halal-crypto/payments-and-exchange-tokens
+AI Analysis Token,AIAT,Payments & Exchange,Halal,85,https://halalscreener.app/en/halal-crypto/payments-and-exchange-tokens
+MBG By Multibank Group,MBG,Payments & Exchange,Halal,85,https://halalscreener.app/en/halal-crypto/payments-and-exchange-tokens
+Request,REQ,Payments & Exchange,Halal,85,https://halalscreener.app/en/halal-crypto/payments-and-exchange-tokens
+NKYC Token,NKYC,Payments & Exchange,Halal,85,https://halalscreener.app/en/halal-crypto/payments-and-exchange-tokens
+HashKey Platform Token,HSK,Payments & Exchange,Halal,85,https://halalscreener.app/en/halal-crypto/payments-and-exchange-tokens
+RealLink,REAL,Payments & Exchange,Halal,85,https://halalscreener.app/en/halal-crypto/payments-and-exchange-tokens
+Bitcastle Token,BCE,Payments & Exchange,Halal,85,https://halalscreener.app/en/halal-crypto/payments-and-exchange-tokens
+BitMart,BMX,Payments & Exchange,Halal,85,https://halalscreener.app/en/halal-crypto/payments-and-exchange-tokens
+Tokenize Xchange,TKX,Payments & Exchange,Halal,85,https://halalscreener.app/en/halal-crypto/payments-and-exchange-tokens
+ChangeNOW,NOW,Payments & Exchange,Halal,85,https://halalscreener.app/en/halal-crypto/payments-and-exchange-tokens
+GRX Chain,GRX,Payments & Exchange,Halal,85,https://halalscreener.app/en/halal-crypto/payments-and-exchange-tokens
+Niza Global,NIZA,Payments & Exchange,Halal,85,https://halalscreener.app/en/halal-crypto/payments-and-exchange-tokens
+WeFi,WFI,Payments & Exchange,Halal,85,https://halalscreener.app/en/halal-crypto/payments-and-exchange-tokens
+MegPrime,MPP,Payments & Exchange,Halal,85,https://halalscreener.app/en/halal-crypto/payments-and-exchange-tokens
+Scandic Coin,SNC,Payments & Exchange,Halal,85,https://halalscreener.app/en/halal-crypto/payments-and-exchange-tokens
+AINFT,NFT,Gaming & NFT,Halal,85,https://halalscreener.app/en/halal-crypto/gaming-and-nft
+Axie Infinity,AXS,Gaming & NFT,Halal,85,https://halalscreener.app/en/halal-crypto/gaming-and-nft
+Decentraland,MANA,Gaming & NFT,Halal,85,https://halalscreener.app/en/halal-crypto/gaming-and-nft
+The Sandbox,SAND,Gaming & NFT,Halal,85,https://halalscreener.app/en/halal-crypto/gaming-and-nft
+GoMining Token,GOMINING,Gaming & NFT,Halal,85,https://halalscreener.app/en/halal-crypto/gaming-and-nft
+GALA,GALA,Gaming & NFT,Halal,85,https://halalscreener.app/en/halal-crypto/gaming-and-nft
+Four,FORM,Gaming & NFT,Halal,85,https://halalscreener.app/en/halal-crypto/gaming-and-nft
+ECOMI,OMI,Gaming & NFT,Halal,85,https://halalscreener.app/en/halal-crypto/gaming-and-nft
+SPACE ID,ID,Gaming & NFT,Halal,85,https://halalscreener.app/en/halal-crypto/gaming-and-nft
+Pentagon Chain,PC,Gaming & NFT,Halal,85,https://halalscreener.app/en/halal-crypto/gaming-and-nft
+Magic Eden,ME,Gaming & NFT,Halal,85,https://halalscreener.app/en/halal-crypto/gaming-and-nft
+Fren Pet,FP,Gaming & NFT,Halal,85,https://halalscreener.app/en/halal-crypto/gaming-and-nft
+Atoshi,ATOS,Gaming & NFT,Halal,85,https://halalscreener.app/en/halal-crypto/gaming-and-nft
+Catizen,CATI,Gaming & NFT,Halal,85,https://halalscreener.app/en/halal-crypto/gaming-and-nft
+Audiera,BEAT,Gaming & NFT,Halal,85,https://halalscreener.app/en/halal-crypto/gaming-and-nft
+Capybobo,PYBOBO,Gaming & NFT,Halal,85,https://halalscreener.app/en/halal-crypto/gaming-and-nft
+Gama Token,GAMA,Gaming & NFT,Halal,85,https://halalscreener.app/en/halal-crypto/gaming-and-nft
+AntFun,ANTFUN,Gaming & NFT,Halal,85,https://halalscreener.app/en/halal-crypto/gaming-and-nft
+Power Protocol,POWER,Gaming & NFT,Halal,85,https://halalscreener.app/en/halal-crypto/gaming-and-nft
+Decentralized Social,DESO,Gaming & NFT,Halal,85,https://halalscreener.app/en/halal-crypto/gaming-and-nft
+Aria.AI,ARIA,Gaming & NFT,Halal,85,https://halalscreener.app/en/halal-crypto/gaming-and-nft
+BLOCKv,VEE,Gaming & NFT,Halal,85,https://halalscreener.app/en/halal-crypto/gaming-and-nft
+Yooldo Games,ESPORTS,Gaming & NFT,Halal,85,https://halalscreener.app/en/halal-crypto/gaming-and-nft
+Undeads Games,UDS,Gaming & NFT,Halal,85,https://halalscreener.app/en/halal-crypto/gaming-and-nft
+Incrypt,INC,Gaming & NFT,Halal,85,https://halalscreener.app/en/halal-crypto/gaming-and-nft
+The9bit,9BIT,Gaming & NFT,Halal,85,https://halalscreener.app/en/halal-crypto/gaming-and-nft
+Jupiter,JUP,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+PancakeSwap,CAKE,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+XMR1,XMR1,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Hastra PRIME,PRIME,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Provenance Blockchain,HASH,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Gnosis,GNO,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Lido DAO,LDO,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Terra Luna Classic,LUNC,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Zebec Network,ZBCN,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Meteora,MET,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+OriginTrail,TRAC,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+EigenCloud (prev. EigenLayer),EIGEN,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Bedrock,BR,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Hastra AUTO,AUTO,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+AWE Network,AWE,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Ultima,ULTIMA,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Yellow,YELLOW,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Plume,PLUME,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Kinetiq,KNTQ,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Oo1.exchange,O,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Nexus Mutual,NXM,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+0x Protocol,ZRX,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+RedStone,RED,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+NOXO,NOXO,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+CoW Protocol,COW,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Amp,AMP,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Sushi,SUSHI,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Threshold Network,T,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Babylon,BABY,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+DUSK,DUSK,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Chainflip,FLIP,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Tellor Tributes,TRB,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Hydration,HDX,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+AltLayer,ALT,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Polymesh,POLYX,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Berachain,BERA,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+DeepBook,DEEP,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Casper Network,CSPR,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Orbs,ORBS,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+ETHGas,GWEI,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+VVS Finance,VVS,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+LCX,LCX,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+STON,STON,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Rocket Pool,RPL,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+SSV Network,SSV,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+REAL,ASSET,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Bifrost,BFC,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Renzo,REZ,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Velvet,VELVET,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Momentum,MMT,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Osmosis,OSMO,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Pundi X,PUNDIX,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Block Street,BSB,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+HOME,HOME,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+ZEROBASE,ZBT,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+MANTRA,MANTRA,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Lorenzo Protocol,BANK,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+tx,TX,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+RHEA,RHEA,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Collect on Fanable,COLLECT,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Capricorn,APR,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Stargate Finance,STG,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Bitlayer,BTR,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Kelp Gain,AGETH,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Katana,KAT,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Fogo,FOGO,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+DOVU,DOVU,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+TRIA,TRIA,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Ramses,RAM,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Sologenic,SOLO,DeFi & Staking,Doubtful,50,https://halalscreener.app/en/halal-crypto/defi-and-staking
+Tether,USDT,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+USDC,USDC,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+Dai,DAI,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+World Liberty Financial,WLFI,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+USDGO,USDGO,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+A7A5,A7A5,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+SoFiUSD,SOFID,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+apxUSD,APXUSD,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+USX,USX,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+EUR CoinVertible,EURCV,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+USAT,USAT,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+AUSD,AUSD,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+GUSD,GUSD,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+crvUSD,CRVUSD,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+CASH,CASH,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+JPYSC,JPYSC,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+Aster USDF,USDF,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+Saturn Dollar,USDAT,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+Frax USD,FRXUSD,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+Avant USD,AVUSD,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+JPY Coin,JPYC,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+Ondo U.S. Dollar Token,USDON,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+USDA,USDA,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+Cygnus Finance Global USD,CGUSD,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+Felix feUSD,FEUSD,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+Lista USD,LISUSD,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+USDsui,USDSUI,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+Crown BRLV,BRLV,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+DOLA,DOLA,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+Royal Euro,REUR,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+Cap USD,CUSD,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+USD.AI,CHIP,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+Neutrl USD,NUSD,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+Alloy Tether,AUSDT,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+USDKG,USDKG,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+Fidelity Digital Dollar,FIDD,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+BRLA Digital BRLA,BRLA,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+Precious Metals USD,PMUSD,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+Brazilian Digital,BRZ,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+MetaMask USD,MUSD,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+AllUnity CHF,CHFAU,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+StraitsX XUSD,XUSD,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+JupUSD,JUPUSD,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+XDAI,XDAI,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+Unitas,UP,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+Noon USN,USN,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+Frankencoin,ZCHF,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+pathUSD,PATHUSD,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+RE,RE,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+Eurite,EURI,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+Keeta,KTA,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+Pax Dollar,USDP,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+MegaUSD,USDM,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+f(x) Protocol fxUSD,FXUSD,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+OpenEden OpenDollar,USDO,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+Resolv,RESOLV,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+STASIS EURO,EURS,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+StablR USD,USDR,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+StandX DUSD,DUSD,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+Anchored Coins AEUR,AEUR,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+Resolv USR,USR,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+Satoshi Stablecoin,SATUSD,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+Palm USD,PUSD,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+Zedxion USDZ,USDZ,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+JUSD,JUSD,Stablecoins,Doubtful,50,https://halalscreener.app/en/halal-crypto/stablecoins
+Dogecoin,DOGE,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Shiba Inu,SHIB,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Pump.fun,PUMP,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+MemeCore,M,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Pepe,PEPE,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Official Trump,TRUMP,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Pudgy Penguins,PENGU,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+BinanceLife,币安人生,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+SPX6900,SPX,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Bonk,BONK,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Ape and Pepe,APEPE,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+FLOKI,FLOKI,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+dogwifhat,WIF,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Useless Coin,USELESS,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Non-Playable Coin,NPC,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+coco,COCO,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Fartcoin,FARTCOIN,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+BBUILDon,B,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Cash Cat,CASHCAT,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Artificial Inu,AI,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Dog (Bitcoin),DOG,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Cheems Token,CHEEMS,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Baby Claw,BABYCLAW,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+YZY,YZY,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Melania Meme,MELANIA,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+ORDI,ORDI,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+MarsCoin,MARSCOIN,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+APES,APES,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Baby Doge Coin,BABYDOGE,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Niu Lai,牛来,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Banana For Scale,BANANAS31,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Turbo,TURBO,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Purr,PURR,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Snek,SNEK,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Anonymous Cat,ZCAT,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Mubarak,MUBARAK,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Comedian,BAN,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+MEMEMETOON,MEME,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Zerebro,ZEREBRO,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+GEKKO,GEKKO,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+MEME HORSE,MHORSE,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+The Black Bull,ANSEM,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Brett,BRETT,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+BOOK OF MEME,BOME,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Peanut the Squirrel,PNUT,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Popcat,POPCAT,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Toshi,TOSHI,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Notcoin,NOT,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+GOHOME,GOHOME,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+ConstitutionDAO,PEOPLE,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Mog Coin,MOG,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Loaded Lions,LION,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Moo Deng,MOODENG,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+cat in a dogs world,MEW,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+TROLL,TROLL,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Rekt,REKT,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Giggle Fund,GIGGLE,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+BasedHype,BASEDHYPE,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Degen,DEGEN,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Wiki Cat,WKC,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Neiro,NEIRO,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+"Not in Employment, Education, or Training",NEET,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Hunter Biden's Laptop,LAPTOP,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Siren,SIREN,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+BULLA,BULLA,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Lobster,龙虾,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Hajimi,哈基米,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+AI Companions,AIC,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Utya,UTYA,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Theros,THEROS,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+AI XOVIA,AIX,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+BurnedFi,BURN,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Tutorial,TUT,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+pippin,PIPPIN,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Kekius Maximus,KEKIUS,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Boner Coin,BONER,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+would,WOULD,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+OSK,OSK,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+TDCCP,TDCCP,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Moonbirds,BIRB,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Official FO,FO,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Basecat,BASECAT,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+AMC Meme Coin,AMC,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Rosa Inu,ROSA,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+ZZZZZZ,ZZZ,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Chump Coin,CHUMP,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+The Bitcoin Bull,TBB,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+The Grays Currency,PTGC,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+ALD,ALD,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Asteroid Shiba,ASTEROID,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Luxxcoin,LUX,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+4Stock,4STOCK,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Goose Token,GOOSE,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+DogBull,DOGO,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Puff The Dragon,PUFF,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+The White Whale,WHITEWHALE,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+MimboGameGroup,MGG,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+GreenHood,HOOD,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+WAR,WAR,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+PYTHIA,PYTHIA,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Get AI,GET,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Bermuda Shorts,SHORT,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Lil' Shrub,SHRUB,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+LoveBit,LB,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+characcon,CHARACCON,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Kedaenge,KEDAENGE,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+City Boy,CITYBOY,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Greyhunt,HUNT,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Ribbita by Virtuals [OLD],TIBBIR,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+AgentFun.AI,AGENTFUN,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+TheTrumpToken,GREAT,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+MAGA Bitcoin,MBTC,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+LOUZI,LOUZI,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Smilek to the Bank,SMILEK,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Peanut,PEANUT,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+BLORB,BLORB,Meme Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/meme-coins
+Tether Gold,XAUT,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+PAX Gold,PAXG,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Kinesis Gold,KAU,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Kinesis Silver,KAG,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+SpaceX (bStocks),SPCXB,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+NVIDIA (bStocks),NVDAB,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Circle (bStocks),CRCLB,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Strategy PP Variable xStock,STRCX,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Circle xStock,CRCLX,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+SoSoValue,SOSO,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+MicroStrategy xStock,MSTRX,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+NVIDIA xStock,NVDAX,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Alphabet (bStocks),GOOGLB,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Bitget Wrapped BTC,BGBTC,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+SpaceX xStock,SPCXX,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Goldfish Gold,GGBR,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+SP500 xStock,SPYX,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Nasdaq xStock,QQQX,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Pleasing Gold,PGOLD,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+SanDisk (bStocks),SNDKB,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Wrapped M by M0,WM,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Tesla xStock,TSLAX,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Circle (Ondo),CRCLON,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Verified Emeralds,VEREM,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Matrixdock Gold,XAUM,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Alphabet xStock,GOOGLX,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Robinhood Wrapped ETH,WETH,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+iShares Core S&P 500 ETF (Ondo),IVVON,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Strategy Stretch Preferred (Ondo),STRCON,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Micron (bStocks),MUB,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Intel (bStocks),INTCB,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Semicon Bull 3X ETF (bStocks),SOXLB,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+SPDR S&P 500 ETF (Ondo),SPYON,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Securitize,SECZ,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Strategy (bStocks),MSTRB,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Invesco QQQ ETF (Ondo),QQQON,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+NVIDIA (Ondo),NVDAON,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Micron (Ondo),MUON,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+SK Hynix (bStocks),SKHYB,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Alphabet Class A (Ondo),GOOGLON,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+iShares Silver Trust (Ondo),SLVON,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+iShares Bitcoin Trust (Ondo),IBITON,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Unit Pump,UPUMP,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Bending Spoons xStock,BSPX,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+FGRS (Figure),FGRS,Tokenized & Wrapped,Doubtful,50,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Ondo,ONDO,Tokenized & Wrapped,Not Halal,0,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Tradable NA Rent Financing SSTN,PC0000031,Tokenized & Wrapped,Not Halal,0,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Spiko US T-Bills Money Market Fund,USTBL,Tokenized & Wrapped,Not Halal,0,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Tradable APAC Diversified Finance SSTN,PC0000033,Tokenized & Wrapped,Not Halal,0,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Tradable LatAm Fintech SSTN,PC0000097,Tokenized & Wrapped,Not Halal,0,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Theo Short Duration US Treasury Fund,THBILL,Tokenized & Wrapped,Not Halal,0,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Tradable Singapore Fintech SSL,PC0000023,Tokenized & Wrapped,Not Halal,0,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Tradable LatAm Middle-Market Lender SSTL,PC0000085,Tokenized & Wrapped,Not Halal,0,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Tradable NA Third Party Online Merchant SSTN,PC0000015,Tokenized & Wrapped,Not Halal,0,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Securitize Tokenized AAA CLO Fund,STAC,Tokenized & Wrapped,Not Halal,0,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Tradable Singapore Fintech SSL,PC0000077,Tokenized & Wrapped,Not Halal,0,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Tradable North America PoS Lender SSTN,PC0000019,Tokenized & Wrapped,Not Halal,0,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Tradable NA Post-Settlement Legal Financing,PC0000101,Tokenized & Wrapped,Not Halal,0,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Midas mTBILL,MTBILL,Tokenized & Wrapped,Not Halal,0,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Tradable Eu/LatAm PoS Financing SSTL,PC0000049,Tokenized & Wrapped,Not Halal,0,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Tradable LatAm BNPL SSTN,PC0000027,Tokenized & Wrapped,Not Halal,0,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Tradable NA Legal Receivables SSL,PC0000081,Tokenized & Wrapped,Not Halal,0,https://halalscreener.app/en/halal-crypto/tokenized-assets
+BlackRock Daily Reinvestment Stablecoin Reserve,BRSRV,Tokenized & Wrapped,Not Halal,0,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Sygnum FIUSD Liquidity Fund,FIUSD,Tokenized & Wrapped,Not Halal,0,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Tradable LatAm Residential SSTL,PC0000089,Tokenized & Wrapped,Not Halal,0,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Fidelity USD Digital Liquidity Fund,FILQ-A,Tokenized & Wrapped,Not Halal,0,https://halalscreener.app/en/halal-crypto/tokenized-assets
+Zcash,ZEC,Privacy Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/privacy-coins
+Monero,XMR,Privacy Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/privacy-coins
+Dash,DASH,Privacy Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/privacy-coins
+Decred,DCR,Privacy Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/privacy-coins
+Zano,ZANO,Privacy Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/privacy-coins
+Nocknchain,NOCK,Privacy Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/privacy-coins
+Verge,XVG,Privacy Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/privacy-coins
+MimbleWimbleCoin,MWC,Privacy Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/privacy-coins
+Bytecoin,BCN,Privacy Coins,Doubtful,50,https://halalscreener.app/en/halal-crypto/privacy-coins
+Hyperliquid,HYPE,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+Aave,AAVE,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+Ethena,ENA,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+BFUSD,BFUSD,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+Re Protocol reUSD,REUSD,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+Pendle,PENDLE,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+Olympus,OHM,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+Spark USDC,SUSDC,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+Compound,COMP,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+Kamino,KMNO,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+Cap,CAP,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+Lido Earn ETH,EARNETH,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+USDai,USDAI,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+apyUSD,APYUSD,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+Convex Finance,CVX,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+Jane USD3,USD3,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+OnRe Tokenized Reinsurance,ONYC,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+Nest BlackOpal LiquidStone II Vault,NOPAL,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+Unity USD,UUSD,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+Genius,GENIUS,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+GMX,GMX,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+Tori trUSD,TRUSD,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+InfiniFi USD,IUSD,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+Midas mF-ONE,MF-ONE,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+yearn.finance,YFI,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+Lido EarnUSD,EARNUSD,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+f(x) USD Saving,FXSAVE,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+Flying Tulip,FT,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+USDu,USDU,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+Metronome Synth USD,MSUSD,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+FOLKS,FOLKS,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+Midas mHYPER,MHYPER,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+Veranta,AVNT,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+Steakhouse Confidential Prime USDC,STEAKCUSDC,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+Zest Protocol,ZEST,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+Tread.fi,TREAD,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+Teller,DEBIT,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+Tori Ecosystem Vault,ETRUSD,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+MYX Finance,MYX,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+Tradoor,TRADOOR,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+Grove,GROVE,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+Full Moon,FM,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+Singularry,SINGULARRY,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+Fulcrom,FUL,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+MEZO,MEZO,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+Gauntlet USD Alpha,GTUSDA,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+CyberDEX,CYDX,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+Quantix Finance,QFI,"Lending, Yield & Derivatives",Not Halal,0,https://halalscreener.app/en/halal-crypto/lending-yield-and-derivatives
+Rain,RAIN,Gambling & Prediction,Not Halal,0,https://halalscreener.app/en/halal-crypto/gambling-and-prediction-markets
+Shuffle,SHFL,Gambling & Prediction,Not Halal,0,https://halalscreener.app/en/halal-crypto/gambling-and-prediction-markets
+Rollbit Coin,RLB,Gambling & Prediction,Not Halal,0,https://halalscreener.app/en/halal-crypto/gambling-and-prediction-markets
+BCGame Coin,BC,Gambling & Prediction,Not Halal,0,https://halalscreener.app/en/halal-crypto/gambling-and-prediction-markets
+WINkLink,WIN,Gambling & Prediction,Not Halal,0,https://halalscreener.app/en/halal-crypto/gambling-and-prediction-markets
+Playnance,GCOIN,Gambling & Prediction,Not Halal,0,https://halalscreener.app/en/halal-crypto/gambling-and-prediction-markets
+Drift Protocol,DRIFT,Gambling & Prediction,Not Halal,0,https://halalscreener.app/en/halal-crypto/gambling-and-prediction-markets
+Opinion,OPN,Gambling & Prediction,Not Halal,0,https://halalscreener.app/en/halal-crypto/gambling-and-prediction-markets

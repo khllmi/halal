@@ -1,0 +1,45 @@
+name: Update prices and deploy
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # every 20 minutes: ~2,200 runs/month x 3 credits = ~6,500 of the free plan's 10,000 monthly credits
+    - cron: "*/20 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch CoinMarketCap top 500
+        env:
+          CMC_API_KEY: ${{ secrets.CMC_API_KEY }}
+        run: python scripts/update_prices.py
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - id: deployment
+        uses: actions/deploy-pages@v4
