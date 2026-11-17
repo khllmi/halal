@@ -599,6 +599,7 @@ footer a { color: inherit; }
     document.querySelectorAll('.tab').forEach((b) => b.classList.toggle('on', b.dataset.tab === id));
     document.querySelectorAll('section').forEach((s) => { s.hidden = s.id !== id; });
     if (id === 'overview') $('brand').setAttribute('aria-current', 'page'); else $('brand').removeAttribute('aria-current');
+    $('summary').hidden = !['overview', 'category', 'market'].includes(id);
     if (location.hash !== '#' + id) history.pushState(null, '', '#' + id);
   }
   const menu = $('menu'), burger = $('burger');
