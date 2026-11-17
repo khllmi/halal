@@ -139,6 +139,19 @@ tr:last-child td { border-bottom: 0; }
 .tick { color: var(--muted); font-size: 13px; }
 .badge { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
 .cat { color: var(--muted); font-size: 13px; }
+/* "Follow Muhammadiyah fatwa" switch */
+.fswitch { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; color: var(--fg); cursor: pointer; user-select: none; padding: 6px 12px 6px 6px; border: 1px solid var(--line); border-radius: 999px; background: var(--panel); white-space: nowrap; }
+.fswitch input { position: absolute; opacity: 0; pointer-events: none; }
+.fswitch .trk { position: relative; width: 34px; height: 20px; border-radius: 999px; background: var(--grid); border: 1px solid var(--line); flex: none; transition: background-color .2s; }
+.fswitch .trk::after { content: ""; position: absolute; top: 2px; left: 2px; width: 14px; height: 14px; border-radius: 50%; background: var(--muted); transition: transform .2s, background-color .2s; }
+.fswitch input:checked + .trk { background: var(--ok); border-color: var(--ok); }
+.fswitch input:checked + .trk::after { transform: translateX(14px); background: #fff; }
+.fswitch input:focus-visible + .trk { outline: 2px solid var(--fg); outline-offset: 2px; }
+.fswitch .info { color: var(--muted); }
+.muh-banner { display: none; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; font-size: 13px; padding: 10px 14px; border-radius: 10px; background: color-mix(in srgb, var(--ok) 10%, var(--panel)); border: 1px solid color-mix(in srgb, var(--ok) 35%, transparent); }
+.muh-on .muh-banner { display: flex; }
+.muh-banner a { color: var(--ok); font-weight: 600; }
+.muh-banner button { appearance: none; font: inherit; font-size: 13px; font-weight: 600; color: var(--ok); background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; }
 /* Fatwa page */
 .timeline { list-style: none; margin: 0; padding: 0 0 0 4px; position: relative; }
 .timeline::before { content: ""; position: absolute; left: 9px; top: 6px; bottom: 6px; width: 2px; background: var(--line); }
@@ -242,6 +255,8 @@ footer a { color: inherit; }
 <div class="wrap">
 
   <section id="overview">
+    <div class="controls" style="justify-content:flex-end"><label class="fswitch" title="Meme and no-utility coins count as Not Halal, per Muhammadiyah&#39;s 2026 fatwa"><input type="checkbox" class="muh-toggle"><span class="trk"></span><span>Follow Muhammadiyah fatwa</span></label></div>
+    <div class="muh-banner"><span>Following <a href="#fatwa">Muhammadiyah's 2026 fatwa</a>: meme coins are counted as <b>Not Halal</b>.</span><button type="button" class="muh-off">Turn off</button></div>
     <div class="kpis">
       <div class="card"><div class="kpi-label">Coins screened</div><div class="kpi-val" id="k-total">—</div><div class="kpi-sub">across 11 categories</div></div>
       <div class="card"><div class="kpi-label"><span class="dot ok"></span>Halal</div><div class="kpi-val" id="k-halal">—</div><div class="kpi-sub">score 85/100</div></div>
@@ -257,6 +272,7 @@ footer a { color: inherit; }
   </section>
 
   <section id="category" hidden>
+    <div class="muh-banner"><span>Following <a href="#fatwa">Muhammadiyah's 2026 fatwa</a>: meme coins are counted as <b>Not Halal</b>.</span><button type="button" class="muh-off">Turn off</button></div>
     <div class="chips" id="chips" role="group" aria-label="Category"></div>
     <div class="card">
       <h2 class="info-name" id="i-name">All categories</h2>
@@ -267,6 +283,7 @@ footer a { color: inherit; }
     <div class="controls">
       <input type="search" id="c-q" placeholder="Search coin or ticker" aria-label="Search coin or ticker">
       <select id="c-status" aria-label="Verdict"><option value="">All verdicts</option><option>Halal</option><option>Doubtful</option><option>Not Halal</option></select>
+      <label class="fswitch" title="Meme and no-utility coins count as Not Halal, per Muhammadiyah&#39;s 2026 fatwa"><input type="checkbox" class="muh-toggle"><span class="trk"></span><span>Follow Muhammadiyah fatwa</span></label>
       <span class="count" id="c-count"></span>
     </div>
     <div class="tablewrap">
@@ -276,6 +293,7 @@ footer a { color: inherit; }
   </section>
 
   <section id="market" hidden>
+    <div class="muh-banner"><span>Following <a href="#fatwa">Muhammadiyah's 2026 fatwa</a>: meme coins are counted as <b>Not Halal</b>.</span><button type="button" class="muh-off">Turn off</button></div>
     <div class="card">
       <h2>CoinMarketCap top 500, screened</h2>
       <div class="asof"><span class="live-dot" id="m-dot"></span><span id="m-asof">Loading prices…</span></div>
@@ -287,6 +305,7 @@ footer a { color: inherit; }
       <input type="search" id="m-q" placeholder="Search coin or ticker" aria-label="Search top 500">
       <select id="m-status" aria-label="Verdict"><option value="">All verdicts</option><option>Halal</option><option>Doubtful</option><option>Not Halal</option><option>Unrated</option></select>
       <select id="m-basis" aria-label="Verdict source"><option value="">All sources</option><option value="hs">HalalScreener</option><option value="est">Estimate</option></select>
+      <label class="fswitch" title="Meme and no-utility coins count as Not Halal, per Muhammadiyah&#39;s 2026 fatwa"><input type="checkbox" class="muh-toggle"><span class="trk"></span><span>Follow Muhammadiyah fatwa</span></label>
       <span class="count" id="m-count"></span>
     </div>
     <div class="tablewrap">
@@ -385,7 +404,7 @@ footer a { color: inherit; }
         <div class="verdict"><div class="badge"><i class="dot ok"></i>Asset, spot</div><p>Both allow holding and trading crypto as an asset. That's the only use this screen rates.</p></div>
         <div class="verdict"><div class="badge"><i class="dot bad"></i>Futures, margin, shorts</div><p>Haram for Muhammadiyah, and failed here for every coin. Perp-exchange tokens are Not Halal.</p></div>
         <div class="verdict"><div class="badge"><i class="dot bad"></i>Gambling tokens</div><p>Excluded by Muhammadiyah's conditions, and rated Not Halal in the Gambling & Prediction category.</p></div>
-        <div class="verdict"><div class="badge"><i class="dot bad"></i>Meme coins</div><p><b>Stricter than this screen.</b> Muhammadiyah rules meme and no-utility coins haram; HalalScreener rates them Doubtful. If you follow Muhammadiyah, treat them as Not Halal.</p></div>
+        <div class="verdict"><div class="badge"><i class="dot bad"></i>Meme coins</div><p><b>Stricter than this screen.</b> Muhammadiyah rules meme and no-utility coins haram; HalalScreener rates them Doubtful. Turn on <b>Follow Muhammadiyah fatwa</b> in Overview, Category or Top 500 to count them as Not Halal.</p></div>
         <div class="verdict"><div class="badge"><i class="dot bad"></i>Lending &amp; fixed yield</div><p>Haram for Muhammadiyah, and rated Not Halal here (Lending, Yield &amp; Derivatives). Liquid staking stays Doubtful.</p></div>
       </div>
     </div>
@@ -524,6 +543,16 @@ footer a { color: inherit; }
 
   const S = { cat: '', q: '', status: '', page: 1, m: { q: '', status: '', basis: '', sort: 'rank', dir: 1, page: 1 } };
   const PER_PAGE = 100;
+  const MEME = 'Meme Coins';
+  const MUH_NOTE = "Not Halal under Muhammadiyah's 2026 fatwa: meme and no-utility coins are haram (tabdhīr, maysir, gharar).";
+  S.muh = false; try { S.muh = localStorage.getItem('fatwaMode') === 'muhammadiyah'; } catch (e) {}
+  document.documentElement.classList.toggle('muh-on', S.muh);
+  const setMuh = (on) => {
+    try { localStorage.setItem('fatwaMode', on ? 'muhammadiyah' : ''); sessionStorage.setItem('keepY', String(window.scrollY)); } catch (e) {}
+    location.reload();
+  };
+  document.querySelectorAll('.muh-toggle').forEach((cb) => { cb.checked = S.muh; cb.addEventListener('change', () => setMuh(cb.checked)); });
+  document.querySelectorAll('.muh-off').forEach((b) => b.addEventListener('click', () => setMuh(false)));
 
   // Slices `list` to the current page and draws the page buttons below the table.
   function paginate(list, st, pagerId, onChange, tableBody) {
@@ -589,6 +618,11 @@ footer a { color: inherit; }
     .catch((e) => { $('m-asof').textContent = 'Failed to load data.'; console.error(e); });
 
   function init(coins, categories, estimates, map, market) {
+    // Muhammadiyah mode: meme coins become Not Halal everywhere (counts, bars, tables, top 500)
+    if (S.muh) {
+      coins = coins.map((c) => c.category === MEME ? { ...c, status: 'Not Halal', score: '0' } : c);
+      estimates = estimates.map((e) => e.category === MEME ? { ...e, status: 'Not Halal', score: '0', reason: e.reason + ' ' + MUH_NOTE } : e);
+    }
     // ---------- HalalScreener totals ----------
     const tally = (rows) => ({ total: rows.length, halal: rows.filter((c) => c.status === 'Halal').length,
       doubtful: rows.filter((c) => c.status === 'Doubtful').length, not_halal: rows.filter((c) => c.status === 'Not Halal').length });
@@ -637,7 +671,7 @@ footer a { color: inherit; }
       const add = (n, label, cls) => { const sp = el('span'); if (cls) sp.append(el('i', 'dot ' + cls)); sp.append(el('b', '', fmtInt(n)), el('span', '', label)); counts.append(sp); };
       add(s.total, 'coins'); if (s.halal) add(s.halal, 'Halal', 'ok'); if (s.doubtful) add(s.doubtful, 'Doubtful', 'warn'); if (s.not_halal) add(s.not_halal, 'Not Halal', 'bad');
       const c = categories.find((x) => x.category === S.cat);
-      $('i-reason').textContent = c ? c.reason : 'Every coin HalalScreener has placed in a category. Pick a category above to read why it gets its verdict.';
+      $('i-reason').textContent = c ? c.reason + (S.muh && c.category === MEME ? ' ' + MUH_NOTE : '') : 'Every coin HalalScreener has placed in a category. Pick a category above to read why it gets its verdict.';
       const link = $('i-link'); link.replaceChildren();
       if (c) {
         if (c.last_changed) link.append(el('span', '', 'Verdicts last changed ' + new Date(c.last_changed + 'T00:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }) + ' · '));
@@ -676,7 +710,7 @@ footer a { color: inherit; }
         status: hs ? hs.status : (est ? est.status : 'Unrated'),
         category: hs ? hs.category : (est ? est.category : ''),
         basis: hs ? (auto ? 'HalalScreener (ticker match)' : 'HalalScreener') : (est ? (est.basis === 'Claude estimate' ? 'Estimate' : 'HalalScreener (category added)') : 'Estimate'),
-        reason: hs ? '' : (est ? est.reason : 'New to the top 500 since 17 Nov 2026; not yet categorised.') };
+        reason: hs ? (S.muh && hs.category === MEME ? MUH_NOTE : '') : (est ? est.reason : 'New to the top 500 since 17 Nov 2026; not yet categorised.') };
     });
     const total = rows.length, cap = rows.reduce((s, r) => s + (r.mcap || 0), 0) || 1;
     const cnt = (s) => rows.filter((r) => r.status === s).length;
@@ -725,6 +759,7 @@ footer a { color: inherit; }
     $('m-status').addEventListener('change', (e) => { S.m.status = e.target.value; S.m.page = 1; renderMarket(); });
     $('m-basis').addEventListener('change', (e) => { S.m.basis = e.target.value; S.m.page = 1; renderMarket(); });
     renderMarket();
+    try { const y = sessionStorage.getItem('keepY'); if (y !== null) { sessionStorage.removeItem('keepY'); requestAnimationFrame(() => window.scrollTo({ top: +y })); } } catch (e) {}
   }
 })();
 </script>
