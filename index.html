@@ -106,7 +106,12 @@ h2 { font-size: 17px; font-weight: 600; margin: 0 0 4px; }
 .seg { height: 100%; }
 .tip { position: absolute; pointer-events: none; background: var(--panel); border: 1px solid var(--line); box-shadow: var(--shadow); border-radius: 8px; padding: 8px 12px; font-size: 13px; z-index: 5; min-width: 150px; }
 .tip .t { font-weight: 600; } .tip .r { display: flex; align-items: center; gap: 6px; color: var(--muted); font-variant-numeric: tabular-nums; }
-.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chips { display: flex; flex-wrap: nowrap; gap: 6px; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x proximity; -webkit-overflow-scrolling: touch; scrollbar-width: thin; padding-bottom: 6px; margin: 0 -18px; padding-left: 18px; padding-right: 18px; scroll-padding: 0 18px;
+  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 14px, #000 calc(100% - 28px), transparent 100%); mask-image: linear-gradient(to right, transparent 0, #000 14px, #000 calc(100% - 28px), transparent 100%); }
+.chip { flex: none; white-space: nowrap; scroll-snap-align: start; }
+.summary { margin: 8px 0 0; padding-top: 18px; border-top: 1px solid var(--line); font-size: 14px; }
+.about h3 { font-size: 16px; margin: 18px 0 6px; } .about h3:first-child { margin-top: 0; }
+.about p { margin: 0; color: var(--muted); } .about a { color: var(--ok); }
 .chip { appearance: none; font: inherit; font-size: 13px; border: 1px solid var(--line); background: var(--panel); color: var(--fg); border-radius: 999px; padding: 5px 12px; cursor: pointer; display: inline-flex; gap: 6px; }
 .chip .c { color: var(--muted); font-variant-numeric: tabular-nums; }
 .chip.on { background: var(--brand); color: var(--brand-ink); border-color: var(--brand); font-weight: 600; }
@@ -199,6 +204,7 @@ footer a { color: inherit; }
         <button class="tab" data-tab="category" role="tab">Category</button>
         <button class="tab" data-tab="market" role="tab">Top 500 (CMC)</button>
         <button class="tab" data-tab="faq" role="tab">FAQ</button>
+        <button class="tab" data-tab="about" role="tab">About</button>
       </nav>
       <div class="theme-row">
         <span class="theme-label" id="theme-label">Dark mode</span>
@@ -212,7 +218,6 @@ footer a { color: inherit; }
   </div>
 </header>
 <div class="wrap">
-  <p class="lede" style="margin:0"><b id="l-halal" class="skeleton">000</b> of <b id="l-total" class="skeleton">000</b> categorised coins screen Halal, <b id="l-doubt" class="skeleton">000</b> are Doubtful and <b id="l-bad" class="skeleton">00</b> are Not Halal, per HalalScreener's category pages.</p>
 
   <section id="overview">
     <div class="kpis">
@@ -358,12 +363,22 @@ footer a { color: inherit; }
     </div>
   </section>
 
-  <details>
-    <summary>About this screen</summary>
-    <p>Category verdicts and coin lists come from the category pages of <a href="https://halalscreener.app/en/halal-crypto">HalalScreener</a>, read on 17 November 2026. The site also lists coins not yet assigned to a category; those aren't shown in the Category tab. Verdicts cover spot buying and holding only: margin, leverage, futures and fixed-yield lending fail regardless of the coin.</p>
-    <p>Top 500 coins, prices, market caps and FDV (fully diluted valuation) come from CoinMarketCap and are refreshed automatically about every 20 minutes. Coins are matched to HalalScreener by CoinMarketCap id where known, otherwise by ticker. Rows marked "Estimate" apply the rule of the HalalScreener category each coin most resembles; they are not HalalScreener verdicts. "Unrated" means there wasn't enough public information to place the coin.</p>
-    <p>AAOIFI has no cryptocurrency standard, so HalalScreener screens against published scholarly opinion and calls itself a screen, not a fatwa. Scholars who consider all crypto impermissible would not accept any coin listed here. Check with a scholar you trust before relying on any verdict.</p>
-  </details>
+  <section id="about" hidden>
+    <div class="faq-hero">
+      <p class="eyebrow">About</p>
+      <h2 class="faq-title">About this screen</h2>
+    </div>
+    <div class="card about">
+      <h3>Where the verdicts come from</h3>
+      <p>Category verdicts and coin lists come from the category pages of <a href="https://halalscreener.app/en/halal-crypto">HalalScreener</a>, read on 17 November 2026. The site also lists coins not yet assigned to a category; those aren't shown in the Category tab. Verdicts cover spot buying and holding only: margin, leverage, futures and fixed-yield lending fail regardless of the coin.</p>
+      <h3>Prices and the top 500</h3>
+      <p>Top 500 coins, prices, market caps and FDV (fully diluted valuation) come from CoinMarketCap and are refreshed automatically about every 20 minutes. Coins are matched to HalalScreener by CoinMarketCap id where known, otherwise by ticker. Rows marked "Estimate" apply the rule of the HalalScreener category each coin most resembles; they are not HalalScreener verdicts. "Unrated" means there wasn't enough public information to place the coin.</p>
+      <h3>Is this a fatwa?</h3>
+      <p>AAOIFI has no cryptocurrency standard, so HalalScreener screens against published scholarly opinion and calls itself a screen, not a fatwa. Scholars who consider all crypto impermissible would not accept any coin listed here. Check with a scholar you trust before relying on any verdict.</p>
+    </div>
+  </section>
+
+  <p class="lede summary" id="summary"><b id="l-halal" class="skeleton">000</b> of <b id="l-total" class="skeleton">000</b> categorised coins screen Halal, <b id="l-doubt" class="skeleton">000</b> are Doubtful and <b id="l-bad" class="skeleton">00</b> are Not Halal, per HalalScreener's category pages.</p>
   <footer>Not financial or religious advice. Data: <a href="https://halalscreener.app/en/halal-crypto">HalalScreener</a> · <a href="https://coinmarketcap.com/">CoinMarketCap</a>.</footer>
 </div>
 
@@ -439,7 +454,7 @@ footer a { color: inherit; }
     document.querySelectorAll('.tab').forEach((b) => b.classList.toggle('on', b.dataset.tab === id));
     document.querySelectorAll('section').forEach((s) => { s.hidden = s.id !== id; });
     if (id === 'overview') $('brand').setAttribute('aria-current', 'page'); else $('brand').removeAttribute('aria-current');
-    if (location.hash !== '#' + id) history.replaceState(null, '', '#' + id);
+    if (location.hash !== '#' + id) history.pushState(null, '', '#' + id);
   }
   const menu = $('menu'), burger = $('burger');
   const setMenu = (open) => { menu.classList.toggle('open', open); burger.setAttribute('aria-expanded', String(open)); };
@@ -448,7 +463,9 @@ footer a { color: inherit; }
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setMenu(false); });
   document.querySelectorAll('.tab').forEach((b) => b.addEventListener('click', () => { show(b.dataset.tab); setMenu(false); window.scrollTo({ top: 0 }); }));
   $('brand').addEventListener('click', (e) => { e.preventDefault(); show('overview'); setMenu(false); window.scrollTo({ top: 0, behavior: 'smooth' }); });
-  const h = location.hash.replace('#', ''); if (['overview', 'category', 'market', 'faq'].includes(h)) show(h);
+  const h = location.hash.replace('#', ''); if (['overview', 'category', 'market', 'faq', 'about'].includes(h)) show(h);
+  const fromHash = () => { const t = location.hash.replace('#', '') || 'overview'; if (['overview', 'category', 'market', 'faq', 'about'].includes(t)) { show(t); window.scrollTo({ top: 0 }); } };
+  window.addEventListener('hashchange', fromHash); window.addEventListener('popstate', fromHash);
 
   Promise.all([getCSV('data/coins.csv'), getCSV('data/categories.csv'), getCSV('data/estimates.csv'), getCSV('data/halal_map.csv'),
     fetch('data/market.json', { cache: 'no-cache' }).then((r) => r.json())])
@@ -483,17 +500,21 @@ footer a { color: inherit; }
         tip.style.top = (ev.clientY - box.top + 14) + 'px';
       });
       b.addEventListener('mouseleave', () => { tip.hidden = true; });
-      b.addEventListener('click', () => { S.cat = r.category; S.page = 1; renderCat(); show('category'); window.scrollTo({ top: 0 }); });
+      b.addEventListener('click', () => { S.cat = r.category; S.page = 1; show('category'); window.scrollTo({ top: 0 }); renderCat(); });
       bars.append(b);
     });
     bars.append(tip);
 
     // ---------- Category tab ----------
     function renderCat() {
-      const chips = $('chips'); chips.replaceChildren();
+      const chips = $('chips'); const keepX = chips.scrollLeft; chips.replaceChildren();
       const mk = (val, label, n) => { const b = el('button', 'chip' + (S.cat === val ? ' on' : '')); b.type = 'button';
         b.append(el('span', '', label), el('span', 'c', fmtInt(n))); b.addEventListener('click', () => { S.cat = val; S.page = 1; renderCat(); }); chips.append(b); };
       mk('', 'All', T.total); catSum.forEach((r) => mk(r.category, r.category, r.total));
+      chips.scrollLeft = keepX;
+      const onChip = chips.querySelector('.chip.on');
+      if (onChip) { const l = onChip.offsetLeft - chips.offsetLeft, r = l + onChip.offsetWidth;
+        if (l < chips.scrollLeft + 18 || r > chips.scrollLeft + chips.clientWidth - 28) chips.scrollTo({ left: Math.max(0, l - 18), behavior: 'smooth' }); }
       const s = S.cat ? catSum.find((r) => r.category === S.cat) : T;
       $('i-name').textContent = S.cat || 'All categories';
       const counts = $('i-counts'); counts.replaceChildren();
