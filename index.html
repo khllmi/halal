@@ -322,7 +322,7 @@ footer a { color: inherit; }
     <div class="controls">
       <input type="search" id="m-q" placeholder="Search coin or ticker" aria-label="Search top 500">
       <select id="m-status" aria-label="Verdict"><option value="">All verdicts</option><option>Halal</option><option>Doubtful</option><option>Not Halal</option><option>Unrated</option></select>
-      <select id="m-scope" aria-label="How many coins"><option value="500">Top 500</option><option value="1000">Top 1,000</option><option value="2000">Top 2,000</option><option value="all">All coins</option></select>
+      <select id="m-scope" aria-label="How many coins"><option value="500">Top 500</option><option value="all">All coins</option></select>
       <select id="m-basis" aria-label="Verdict source"><option value="">All sources</option><option value="hs">HalalScreener</option><option value="est">Estimate</option><option value="auto">Auto (tags)</option></select>
       <label class="fswitch" title="Meme and no-utility coins count as Not Halal, per Muhammadiyah&#39;s 2026 fatwa"><input type="checkbox" class="muh-toggle"><span class="trk"></span><span>Follow Muhammadiyah fatwa</span></label>
       <span class="count" id="m-count"></span>
@@ -342,7 +342,7 @@ footer a { color: inherit; }
     <div class="card" id="market-summary">
       <h2 id="m-title">CoinMarketCap top 500, screened</h2>
       <div class="asof"><span class="live-dot" id="m-dot"></span><span id="m-asof">Loading prices…</span></div>
-      <p class="lede" style="margin-top:0">Of the top <b id="m-coins">—</b> coins by market cap, <b id="m-halal">—</b> are Halal, <b id="m-doubt">—</b> Doubtful, <b id="m-bad">—</b> Not Halal and <b id="m-unr">—</b> Unrated. <b id="m-est">—</b> verdicts are estimates that apply HalalScreener's category rules by hand<span id="m-auto-wrap">, and <b id="m-auto">—</b> are assigned automatically from CoinMarketCap tags</span>.</p>
+      <p class="lede" style="margin-top:0"><span id="m-of">Of the top</span> <b id="m-coins">—</b> coins by market cap, <b id="m-halal">—</b> are Halal, <b id="m-doubt">—</b> Doubtful, <b id="m-bad">—</b> Not Halal and <b id="m-unr">—</b> Unrated. <b id="m-est">—</b> verdicts are estimates that apply HalalScreener's category rules by hand<span id="m-auto-wrap">, and <b id="m-auto">—</b> are assigned automatically from CoinMarketCap tags</span>.</p>
       <div class="bar-head">
         <p class="sub" id="m-bar-label" style="margin:0">Share of top-500 coins by verdict</p>
         <div class="seg-ctl" role="radiogroup" aria-label="Measure bar by">
@@ -523,7 +523,7 @@ footer a { color: inherit; }
         <p><b>Unrated</b> means there wasn't enough information about the project to place it. Treat these with extra care.</p>
       </div></details>
       <details class="qa"><summary>How current are the prices and the list?</summary><div class="faq-body">
-        <p>Prices, market caps, FDV and the full CoinMarketCap list are updated twice a day, at 07:00 and 19:00 WIB. Category verdicts were read from HalalScreener on 17 November 2026 and are updated when its rulings change.</p>
+        <p>The top 500 is refreshed every hour. The full CoinMarketCap list, which you can switch to above the table, is refreshed at 07:00 and 19:00 WIB. Category verdicts were read from HalalScreener on 17 November 2026 and are updated when its rulings change.</p>
       </div></details>
       <details class="qa"><summary>Is this financial or religious advice?</summary><div class="faq-body">
         <p>No. This is a screening tool to help you narrow down choices. It is not a fatwa and not investment advice. Prices of all these coins can fall sharply. Consult a qualified scholar and do your own research.</p>
@@ -540,7 +540,7 @@ footer a { color: inherit; }
       <h3>Where the verdicts come from</h3>
       <p>Category verdicts and coin lists come from the category pages of <a href="https://halalscreener.app/en/halal-crypto">HalalScreener</a>, read on 17 November 2026. The site also lists coins not yet assigned to a category; those aren't shown in the Category tab. Verdicts cover spot buying and holding only: margin, leverage, futures and fixed-yield lending fail regardless of the coin.</p>
       <h3>Prices and the top 500</h3>
-      <p>Every active coin on CoinMarketCap, with prices, market caps and FDV (fully diluted valuation), is updated automatically twice a day, at 07:00 and 19:00 WIB. Coins are matched to HalalScreener by CoinMarketCap id where known, otherwise by ticker. Rows marked "Estimate" were placed by hand in the HalalScreener category each coin most resembles. Rows marked "Auto (tags)" are placed automatically from the coin's CoinMarketCap tags, checking prohibited and doubtful tags (gambling, lending, derivatives, meme, stablecoin, DeFi) before permissible ones, so a coin with any doubtful tag is never marked Halal. Neither is a HalalScreener verdict. "Unrated" means no tag or information was enough to place the coin.</p>
+      <p>Prices, market caps and FDV (fully diluted valuation) come from CoinMarketCap. The top 500 is refreshed every hour; the full list of every active coin, which the selector above the table switches to, is refreshed at 07:00 and 19:00 WIB. Coins are matched to HalalScreener by CoinMarketCap id where known, otherwise by ticker. Rows marked "Estimate" were placed by hand in the HalalScreener category each coin most resembles. Rows marked "Auto (tags)" are placed automatically from the coin's CoinMarketCap tags, checking prohibited and doubtful tags (gambling, lending, derivatives, meme, stablecoin, DeFi) before permissible ones, so a coin with any doubtful tag is never marked Halal. Neither is a HalalScreener verdict. "Unrated" means no tag or information was enough to place the coin.</p>
       <h3>Is this a fatwa?</h3>
       <p>AAOIFI has no cryptocurrency standard, so HalalScreener screens against published scholarly opinion and calls itself a screen, not a fatwa. Scholars who consider all crypto impermissible would not accept any coin listed here. Check with a scholar you trust before relying on any verdict.</p>
     </div>
@@ -741,7 +741,7 @@ footer a { color: inherit; }
     const mapById = new Map(map.map((m) => [String(m.cmc_id), m]));
     const estBySlug = new Map(estimates.map((e) => [e.slug, e]));
     const AUTO = 'Auto (tags)';
-    const allRows = market.coins.map((c) => {
+    const toRow = (c) => {
       const m = mapById.get(String(c.id));
       let hs = null, tick = false;
       if (m) hs = m.hs_ticker ? byTickerExact.get(m.hs_ticker) : null;
@@ -756,20 +756,20 @@ footer a { color: inherit; }
         if (S.muh && category === MEME) { status = 'Not Halal'; reason += ' ' + MUH_NOTE; }
       } else { status = 'Unrated'; category = ''; basis = AUTO; reason = 'No CoinMarketCap tag that maps to a category, so this coin is not rated.'; }
       return { ...c, status, category, basis, reason };
-    });
-    const maxRank = allRows.reduce((m, r) => Math.max(m, r.rank || 0), 0);
-    let scope = '500'; try { const sv = localStorage.getItem('scope'); if (['500', '1000', '2000', 'all'].includes(sv)) scope = sv; } catch (e) {}
-    $('m-scope').value = scope;
-    // hide scope choices the data can't fill (e.g. the 500-coin snapshot)
-    [...$('m-scope').options].forEach((o) => { if (o.value !== 'all' && +o.value > 500 && maxRank < +o.value) o.hidden = true; });
-    if (scope !== 'all' && maxRank < +scope) scope = '500';
+    };
+    // Two data files: the top 500 (refreshed hourly) and every coin (twice a day, loaded on demand).
+    const feeds = { '500': { data: market, rows: market.coins.map(toRow) }, all: null };
+    let scope = '500'; try { if (localStorage.getItem('scope') === 'all') scope = 'all'; } catch (e) {}
     let rows = [], total = 0, cap = 1;
     const cnt = (s) => rows.filter((r) => r.status === s).length;
-    const scopeName = () => scope === 'all' ? 'all ' + fmtInt(rows.length) + ' CoinMarketCap' : 'top ' + fmtInt(+scope);
+    const scopeName = () => scope === 'all' ? 'all ' + fmtInt(rows.length) + ' CoinMarketCap' : 'top 500';
     function applyScope() {
-      rows = scope === 'all' ? allRows : allRows.filter((r) => r.rank && r.rank <= +scope);
+      const feed = feeds[scope] || feeds['500'];
+      rows = feed.rows;
       total = rows.length; cap = rows.reduce((s2, r) => s2 + (r.mcap || 0), 0) || 1;
-      $('m-title').textContent = scope === 'all' ? 'All ' + fmtInt(total) + ' CoinMarketCap coins, screened' : 'CoinMarketCap top ' + fmtInt(+scope) + ', screened';
+      $('m-title').textContent = scope === 'all' ? 'All ' + fmtInt(total) + ' CoinMarketCap coins, screened' : 'CoinMarketCap top 500, screened';
+      showAsOf(feed.data);
+      $('m-of').textContent = scope === 'all' ? 'Of all' : 'Of the top';
       $('m-coins').textContent = fmtInt(total); $('m-halal').textContent = fmtInt(cnt('Halal')); $('m-doubt').textContent = fmtInt(cnt('Doubtful'));
       $('m-bad').textContent = fmtInt(cnt('Not Halal')); $('m-unr').textContent = fmtInt(cnt('Unrated'));
       $('m-est').textContent = fmtInt(rows.filter((r) => r.basis === 'Estimate').length);
@@ -802,10 +802,15 @@ footer a { color: inherit; }
     document.querySelectorAll('.seg-ctl button').forEach((b2) => b2.addEventListener('click', () => { barBy = b2.dataset.by; try { localStorage.setItem('barBy', barBy); } catch (e) {} drawBar(); }));
     applyScope();
 
-    const upd = new Date(market.updated); const ageMin = (Date.now() - upd) / 60000;
-    const when = upd.toLocaleString(undefined, { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' });
-    if (market.source === 'coinmarketcap') { $('m-asof').textContent = 'CoinMarketCap prices as of ' + when + ' (updated daily at 07:00 and 19:00 WIB). Sorted by rank.'; $('m-dot').classList.toggle('stale', ageMin > 13 * 60); }
-    else { $('m-asof').textContent = 'Snapshot from ' + when + '. Live updates start once the CoinMarketCap API key is added.'; $('m-dot').classList.add('stale'); }
+    function showAsOf(data) {
+      const upd = new Date(data.updated), ageMin = (Date.now() - upd) / 60000;
+      const when = upd.toLocaleString(undefined, { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' });
+      if (data.source === 'coinmarketcap') {
+        const how = scope === 'all' ? 'updated at 07:00 and 19:00 WIB' : 'updated hourly';
+        $('m-asof').textContent = 'CoinMarketCap prices as of ' + when + ' (' + how + '). Sorted by rank.';
+        $('m-dot').classList.toggle('stale', ageMin > (scope === 'all' ? 13 * 60 : 150));
+      } else { $('m-asof').textContent = 'Snapshot from ' + when + '. Live updates start once the CoinMarketCap API key is added.'; $('m-dot').classList.add('stale'); }
+    }
 
     // Category detail popover (hover with a mouse, tap on touch screens)
     const pop = el('div', 'pop'); pop.hidden = true; pop.setAttribute('role', 'dialog'); document.body.append(pop);
@@ -883,7 +888,31 @@ footer a { color: inherit; }
     $('m-q').addEventListener('input', (e) => { S.m.q = e.target.value.trim().toLowerCase(); S.m.page = 1; renderMarket(); });
     $('m-status').addEventListener('change', (e) => { S.m.status = e.target.value; S.m.page = 1; renderMarket(); });
     $('m-basis').addEventListener('change', (e) => { S.m.basis = e.target.value; S.m.page = 1; renderMarket(); });
-    $('m-scope').addEventListener('change', (e) => { scope = e.target.value; try { localStorage.setItem('scope', scope); } catch (err) {} S.m.page = 1; applyScope(); renderMarket(); });
+    let allTried = false;
+    function loadAll() {
+      if (feeds.all || allTried) return Promise.resolve(!!feeds.all);
+      allTried = true;
+      return fetch('data/market_all.json', { cache: 'no-cache' })
+        .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then((d) => { if (!d.coins || d.coins.length < 600) throw new Error('short file'); feeds.all = { data: d, rows: d.coins.map(toRow) }; return true; })
+        .catch((e) => { console.warn('All-coins file not available:', e); return false; });
+    }
+    function setScope(next) {
+      const go = () => { try { localStorage.setItem('scope', scope); } catch (err) {} S.m.page = 1; applyScope(); renderMarket(); };
+      if (next !== 'all') { scope = next; go(); return; }
+      $('m-count').textContent = 'Loading all coins…';
+      loadAll().then((ok) => {
+        if (ok) { scope = 'all'; }
+        else {
+          [...$('m-scope').options].forEach((o) => { if (o.value === 'all') o.hidden = true; });
+          $('m-scope').value = '500'; scope = '500';
+        }
+        go();
+        if (!ok) $('m-asof').textContent = 'The all-coins list is not published yet, so this is the top 500.';
+      });
+    }
+    $('m-scope').addEventListener('change', (e) => setScope(e.target.value));
+    if (scope === 'all') { $('m-scope').value = 'all'; setScope('all'); }
     renderMarket();
     try { const y = sessionStorage.getItem('keepY'); if (y !== null) { sessionStorage.removeItem('keepY'); requestAnimationFrame(() => window.scrollTo({ top: +y })); } } catch (e) {}
   }
