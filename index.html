@@ -69,7 +69,7 @@ body, .card, .topbar, .tablewrap, th { transition: background-color .2s ease, co
 .burger[aria-expanded="true"] .x { display: block; }
 .toggle:focus-visible, .tab:focus-visible, .brand:focus-visible, .burger:focus-visible { outline: 2px solid var(--brand-ink); outline-offset: 2px; }
 .tablewrap { scroll-margin-top: 80px; }
-@media (max-width: 720px) {
+@media (max-width: 900px) {
   .topbar-inner { min-height: 58px; gap: 12px; }
   .brand { font-size: clamp(15px, 4.6vw, 18px); }
   .brand-text { letter-spacing: .04em; font-size: 1.4em; }
@@ -139,6 +139,27 @@ tr:last-child td { border-bottom: 0; }
 .tick { color: var(--muted); font-size: 13px; }
 .badge { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
 .cat { color: var(--muted); font-size: 13px; }
+/* Fatwa page */
+.timeline { list-style: none; margin: 0; padding: 0 0 0 4px; position: relative; }
+.timeline::before { content: ""; position: absolute; left: 9px; top: 6px; bottom: 6px; width: 2px; background: var(--line); }
+.timeline li { position: relative; padding: 0 0 16px 30px; }
+.timeline li:last-child { padding-bottom: 0; }
+.timeline li::before { content: ""; position: absolute; left: 0; top: 5px; width: 12px; height: 12px; border-radius: 50%; border: 2px solid var(--panel); background: var(--muted); box-shadow: 0 0 0 1px var(--line); }
+.timeline li.t-ok::before { background: var(--ok); } .timeline li.t-bad::before { background: var(--bad); } .timeline li.t-next::before { background: var(--panel); box-shadow: 0 0 0 2px var(--warn); }
+.timeline .when { font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.timeline .what { font-weight: 600; } .timeline .detail { color: var(--muted); font-size: 14px; }
+.orgs { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 12px; }
+.org h3 { font-family: var(--serif); font-weight: 500; font-size: 22px; margin: 6px 0 2px; }
+.org .meta { font-size: 13px; color: var(--muted); margin-bottom: 10px; }
+.status { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; padding: 3px 10px; border-radius: 999px; background: color-mix(in srgb, var(--ok) 12%, transparent); color: var(--ok); }
+.rulings { list-style: none; margin: 0 0 12px; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.rulings li { display: grid; grid-template-columns: 18px 1fr; gap: 8px; font-size: 14px; color: var(--muted); }
+.rulings li b { color: var(--fg); }
+.rulings .mk { font-weight: 700; text-align: center; } .rulings .y { color: var(--ok); } .rulings .n { color: var(--bad); } .rulings .c { color: var(--warn); }
+.srcs { font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 10px; display: flex; flex-direction: column; gap: 4px; }
+.srcs a { color: var(--ok); }
+.align { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; }
+.align .verdict p { font-size: 14px; }
 /* FAQ page */
 .faq-hero { padding: 6px 0 2px; }
 .eyebrow { font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--ok); margin: 0 0 6px; }
@@ -203,6 +224,7 @@ footer a { color: inherit; }
       <nav class="tabs" role="tablist" aria-label="Sections">
         <button class="tab" data-tab="category" role="tab">Category</button>
         <button class="tab" data-tab="market" role="tab">Top 500 (CMC)</button>
+        <button class="tab" data-tab="fatwa" role="tab">Fatwa</button>
         <button class="tab" data-tab="faq" role="tab">FAQ</button>
         <button class="tab" data-tab="about" role="tab">About</button>
       </nav>
@@ -281,6 +303,78 @@ footer a { color: inherit; }
     <nav class="pager" id="m-pager" aria-label="Top 500 table pages"></nav>
   </section>
 
+  <section id="fatwa" hidden>
+    <div class="faq-hero">
+      <p class="eyebrow">Indonesian rulings</p>
+      <h2 class="faq-title">What Muhammadiyah and NU say about crypto</h2>
+      <p class="faq-lead">Indonesia's two largest Islamic organisations have both revised their position. Each now accepts crypto as a <b>digital asset</b> that can be held and traded, while forbidding its use as <b>currency</b> in Indonesia. Earlier rulings from 2021–2022 had declared it haram.</p>
+    </div>
+
+    <div class="card">
+      <h2>Timeline</h2>
+      <p class="sub">From prohibition to conditional permission.</p>
+      <ol class="timeline">
+        <li class="t-bad"><div class="when">Oct 2021</div><div class="what">PWNU East Java (Nahdlatul Ulama): haram</div><div class="detail">Its bahtsul masail found crypto didn't meet the conditions of a valid sale and leaned towards fraud and gambling.</div></li>
+        <li class="t-bad"><div class="when">Nov 2021</div><div class="what">MUI: haram as currency</div><div class="detail">Indonesian Ulema Council ruling on cryptocurrency as money.</div></li>
+        <li class="t-bad"><div class="when">Jan 2022</div><div class="what">Muhammadiyah (Majelis Tarjih): haram</div><div class="detail">Haram both as an investment and as a medium of exchange, citing gharar and maysir.</div></li>
+        <li class="t-ok"><div class="when">4 Mar 2026</div><div class="what">Muhammadiyah: permissible with conditions</div><div class="detail">New fatwa on crypto as a digital financial asset (Fatwa No. 02/2026).</div></li>
+        <li class="t-ok"><div class="when">29 Aug 2026</div><div class="what">35th NU Muktamar: Bitcoin is an asset</div><div class="detail">Bahtsul Masail Waqi'iyah: Bitcoin is mal and a valid medium of exchange; using it as currency is forbidden.</div></li>
+        <li class="t-next"><div class="when">Expected Nov 2026</div><div class="what">DSN-MUI fatwa on Bitcoin</div><div class="detail">The National Sharia Council said it is studying Bitcoin and targeting a fatwa this month.</div></li>
+      </ol>
+    </div>
+
+    <div class="orgs">
+      <div class="card org">
+        <span class="status">Mubah muqayyad</span>
+        <h3>Muhammadiyah</h3>
+        <div class="meta">Majelis Tarjih dan Tajdid PP Muhammadiyah · Fatwa No. 02/2026 · 4 March 2026</div>
+        <ul class="rulings">
+          <li><span class="mk y">✓</span><span><b>A valuable asset (māl mutaqawwam).</b> Crypto has utility people want, can be held in a digital wallet and has socially recognised economic value.</span></li>
+          <li><span class="mk y">✓</span><span><b>Buying, selling and investing are permissible in principle</b>, as long as no evidence or practice makes a particular case haram.</span></li>
+          <li><span class="mk c">!</span><span><b>Conditional, not absolute.</b> Tokens tied to gambling, pornography, black markets, or projects with no clear utility do not qualify.</span></li>
+          <li><span class="mk n">✕</span><span><b>Leverage and short selling are haram.</b></span></li>
+          <li><span class="mk n">✕</span><span><b>Not a currency.</b> Crypto may not be used as a means of payment; the rupiah is Indonesia's only legal tender.</span></li>
+          <li><span class="mk c">!</span><span><b>Airdrops</b> become haram when the task required to receive them breaks Shariah, such as promoting gambling sites or spreading hoaxes.</span></li>
+        </ul>
+        <div class="srcs">
+          <span>The fatwa says it is guidance, not an invitation to invest.</span>
+          <a href="https://muhammadiyah.or.id/2026/03/fatwa-majelis-tarjih-dan-tajdid-pp-muhammadiyah-tentang-kripto-sebagai-aset-keuangan-digital/" target="_blank" rel="noopener">Official announcement · muhammadiyah.or.id</a>
+          <a href="https://drive.google.com/file/d/1IyArjZJnj9y2NX4Uy37n0F8nrtSlDgBh/view" target="_blank" rel="noopener">Full fatwa text (PDF)</a>
+        </div>
+      </div>
+
+      <div class="card org">
+        <span class="status">Asset: valid · Currency: haram</span>
+        <h3>Nahdlatul Ulama</h3>
+        <div class="meta">Bahtsul Masail Waqi'iyah, 35th NU Muktamar · Tambakberas, Jombang · 29 August 2026</div>
+        <ul class="rulings">
+          <li><span class="mk y">✓</span><span><b>Bitcoin is māl (property)</b> under the criteria of fiqh.</span></li>
+          <li><span class="mk y">✓</span><span><b>Bitcoin can be tsaman</b>, a medium of exchange, in fiqh terms.</span></li>
+          <li><span class="mk y">✓</span><span><b>Transacting in Bitcoin as a digital asset is valid and permitted.</b></span></li>
+          <li><span class="mk n">✕</span><span><b>As currency: "sah tapi haram"</b>, valid in principle but forbidden, because it conflicts with Law No. 7/2011 on Currency.</span></li>
+          <li><span class="mk c">!</span><span><b>Reasoning:</b> it has real, permissible benefit and customary value ('urf), can be transferred between owners, is protected by its private key, and follows OJK's treatment of crypto as a digital asset.</span></li>
+        </ul>
+        <div class="srcs">
+          <span>Announced by KH Mahbub Maafi, Chair of LBM PBNU. The ruling addresses Bitcoin specifically and says nothing on leverage or other tokens.</span>
+          <a href="https://nu.or.id/nasional/muktamar-ke-35-nu-putuskan-bitcoin-sebagai-aset-dan-alat-transaksi-bukan-mata-uang-9YSHP" target="_blank" rel="noopener">NU Online, 30 Aug 2026</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>How this lines up with the screener</h2>
+      <p class="sub">The new rulings and this screen draw the same lines.</p>
+      <div class="align">
+        <div class="verdict"><div class="badge"><i class="dot ok"></i>Asset, spot</div><p>Both allow holding and trading crypto as an asset. That's the only use this screen rates.</p></div>
+        <div class="verdict"><div class="badge"><i class="dot bad"></i>Leverage & shorts</div><p>Haram for Muhammadiyah, and failed here for every coin. Perp-exchange tokens are Not Halal.</p></div>
+        <div class="verdict"><div class="badge"><i class="dot bad"></i>Gambling tokens</div><p>Excluded by Muhammadiyah's conditions, and rated Not Halal in the Gambling & Prediction category.</p></div>
+        <div class="verdict"><div class="badge"><i class="dot warn"></i>No clear utility</div><p>Muhammadiyah excludes them. Meme coins are Doubtful here, so check them with extra care.</p></div>
+      </div>
+    </div>
+
+    <p class="note">These are summaries in plain English. The Muhammadiyah summary is drawn from its official announcement as reported in the press and should be read alongside the full fatwa text. Read the original rulings and ask a scholar from your own tradition before relying on them.</p>
+  </section>
+
   <section id="faq" hidden>
     <div class="faq-hero">
       <p class="eyebrow">How we screen</p>
@@ -345,6 +439,10 @@ footer a { color: inherit; }
       </div></details>
       <details class="qa"><summary>Are stablecoins halal?</summary><div class="faq-body">
         <p>Stablecoins are rated <b>Doubtful</b>. They are useful for settling trades, but most issuers earn interest on the reserves backing them, and some keep their peg through lending. Yield-bearing dollars that pay you interest or funding-rate income are rated <b>Not Halal</b>.</p>
+      </div></details>
+      <details class="qa"><summary>What do Muhammadiyah and NU say about crypto?</summary><div class="faq-body">
+        <p>Both changed their earlier haram rulings in 2026. Muhammadiyah (March 2026) treats crypto as a valuable asset that may be traded and invested in, with conditions, and forbids leverage, short selling and using it as currency. NU's 35th Muktamar (August 2026) ruled Bitcoin a valid asset to transact, but forbade using it as currency.</p>
+        <p><a href="#fatwa" class="to-fatwa">Read the summaries, timeline and sources on the Fatwa page →</a></p>
       </div></details>
       <details class="qa"><summary>How many halal cryptocurrencies are there?</summary><div class="faq-body">
         <p>Across HalalScreener's categories, <b id="f-halal">—</b> of <b id="f-total">—</b> coins are rated Halal, <b id="f-doubt">—</b> Doubtful and <b id="f-bad">—</b> Not Halal.</p>
@@ -463,8 +561,8 @@ footer a { color: inherit; }
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setMenu(false); });
   document.querySelectorAll('.tab').forEach((b) => b.addEventListener('click', () => { show(b.dataset.tab); setMenu(false); window.scrollTo({ top: 0 }); }));
   $('brand').addEventListener('click', (e) => { e.preventDefault(); show('overview'); setMenu(false); window.scrollTo({ top: 0, behavior: 'smooth' }); });
-  const h = location.hash.replace('#', ''); if (['overview', 'category', 'market', 'faq', 'about'].includes(h)) show(h);
-  const fromHash = () => { const t = location.hash.replace('#', '') || 'overview'; if (['overview', 'category', 'market', 'faq', 'about'].includes(t)) { show(t); window.scrollTo({ top: 0 }); } };
+  const h = location.hash.replace('#', ''); if (['overview', 'category', 'market', 'fatwa', 'faq', 'about'].includes(h)) show(h);
+  const fromHash = () => { const t = location.hash.replace('#', '') || 'overview'; if (['overview', 'category', 'market', 'fatwa', 'faq', 'about'].includes(t)) { show(t); window.scrollTo({ top: 0 }); } };
   window.addEventListener('hashchange', fromHash); window.addEventListener('popstate', fromHash);
 
   Promise.all([getCSV('data/coins.csv'), getCSV('data/categories.csv'), getCSV('data/estimates.csv'), getCSV('data/halal_map.csv'),
