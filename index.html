@@ -7,7 +7,7 @@
 <title>Halal Crypto Screener</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <meta name="description" content="Halal screening of crypto coins by category, with live CoinMarketCap top 500 prices. Based on HalalScreener's category verdicts.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%232f7d5b'/><path d='M10 16.5l4 4 8-9' stroke='white' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
 <script>
@@ -42,6 +42,7 @@ body, .card, .topbar, .tablewrap, th { transition: background-color .2s ease, co
 .topbar-inner { position: relative; max-width: 1120px; margin: 0 auto; padding: 0 18px; display: flex; align-items: center; gap: 28px; min-height: 58px; }
 .brand { appearance: none; background: none; border: 0; padding: 0; color: var(--brand-ink); cursor: pointer; font-family: var(--serif); font-size: 22px; white-space: nowrap; margin: 0; font-weight: 600; letter-spacing: -.01em; display: flex; align-items: center; gap: 8px; text-decoration: none; }
 .brand svg { flex: none; }
+.brand-text { font-family: "Cinzel", "Trajan Pro", "Times New Roman", Georgia, serif; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; font-size: .92em; line-height: 1; padding-top: 2px; }
 .brand:hover .brand-text { text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px; }
 .menu { flex: 1; display: flex; align-items: stretch; justify-content: space-between; gap: 16px; align-self: stretch; }
 .tabs { display: flex; gap: 2px; }
@@ -64,7 +65,8 @@ body, .card, .topbar, .tablewrap, th { transition: background-color .2s ease, co
 .tablewrap { scroll-margin-top: 80px; }
 @media (max-width: 720px) {
   .topbar-inner { min-height: 58px; gap: 12px; }
-  .brand { font-size: 19px; }
+  .brand { font-size: clamp(15px, 4.6vw, 18px); }
+  .brand-text { letter-spacing: .04em; }
   .burger { display: inline-flex; }
   .menu { display: none; position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; justify-content: flex-start; gap: 0; padding: 6px 12px 12px; background: var(--brand); border-top: 1px solid var(--brand-line); box-shadow: 0 14px 28px rgba(0,0,0,.22); }
   .menu.open { display: flex; }
