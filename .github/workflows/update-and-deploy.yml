@@ -4,8 +4,9 @@ on:
   push:
     branches: [main]
   schedule:
-    # every 20 minutes: ~2,200 runs/month x 3 credits = ~6,500 of the free plan's 10,000 monthly credits
-    - cron: "*/20 * * * *"
+    # 07:00 and 19:00 WIB (UTC+7) = 00:00 and 12:00 UTC.
+    # ~50 credits per run for every active coin → ~3,000 of the free plan's 10,000 credits a month.
+    - cron: "0 0,12 * * *"
   workflow_dispatch:
 
 permissions:
@@ -15,7 +16,7 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build-deploy:
@@ -30,10 +31,13 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Fetch CoinMarketCap top 500
+      # Scheduled and manual runs fetch fresh data from CoinMarketCap.
+      # A push only changes the site, so it reuses the data already live and spends no credits.
+      - name: Get CoinMarketCap data
         env:
           CMC_API_KEY: ${{ secrets.CMC_API_KEY }}
-        run: python scripts/update_prices.py
+          MODE: ${{ github.event_name == 'push' && 'reuse' || 'fetch' }}
+        run: python scripts/update_prices.py "$MODE"
 
       - uses: actions/configure-pages@v5
 
