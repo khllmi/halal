@@ -246,7 +246,7 @@ footer a { color: inherit; }
 <body>
 <header class="topbar">
   <div class="topbar-inner">
-    <a class="brand" href="#overview" id="brand" title="Overview"><span class="brand-text">Halal Crypto Screener</span></a>
+    <a class="brand" href="#market" id="brand" title="Top 500 (CMC)"><span class="brand-text">Halal Crypto Screener</span></a>
     <button class="burger" id="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="menu">
       <svg class="lines" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
       <svg class="x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
@@ -254,7 +254,7 @@ footer a { color: inherit; }
     <div class="menu" id="menu">
       <nav class="tabs" role="tablist" aria-label="Sections">
         <button class="tab" data-tab="category" role="tab">Category</button>
-        <button class="tab" data-tab="market" role="tab">Top 500 (CMC)</button>
+        <button class="tab" data-tab="overview" role="tab">Overview</button>
         <button class="tab" data-tab="fatwa" role="tab">Fatwa</button>
         <button class="tab" data-tab="faq" role="tab">FAQ</button>
         <button class="tab" data-tab="about" role="tab">About</button>
@@ -272,7 +272,7 @@ footer a { color: inherit; }
 </header>
 <div class="wrap">
 
-  <section id="overview">
+  <section id="overview" hidden>
     <div class="controls" style="justify-content:flex-end"><label class="fswitch" title="Meme and no-utility coins count as Not Halal, per Muhammadiyah&#39;s 2026 fatwa"><input type="checkbox" class="muh-toggle"><span class="trk"></span><span>Follow Muhammadiyah fatwa</span></label></div>
     <div class="muh-banner"><span>Following <a href="#fatwa">Muhammadiyah's 2026 fatwa</a>: meme coins are counted as <b>Not Halal</b>.</span><button type="button" class="muh-off">Turn off</button></div>
     <div class="kpis">
@@ -310,7 +310,7 @@ footer a { color: inherit; }
     <nav class="pager" id="c-pager" aria-label="Category table pages"></nav>
   </section>
 
-  <section id="market" hidden>
+  <section id="market">
     <div class="muh-banner"><span>Following <a href="#fatwa">Muhammadiyah's 2026 fatwa</a>: meme coins are counted as <b>Not Halal</b>.</span><button type="button" class="muh-off">Turn off</button></div>
     <div class="card">
       <h2>CoinMarketCap top 500, screened</h2>
@@ -616,7 +616,7 @@ footer a { color: inherit; }
   function show(id) {
     document.querySelectorAll('.tab').forEach((b) => b.classList.toggle('on', b.dataset.tab === id));
     document.querySelectorAll('section').forEach((s) => { s.hidden = s.id !== id; });
-    if (id === 'overview') $('brand').setAttribute('aria-current', 'page'); else $('brand').removeAttribute('aria-current');
+    if (id === 'market') $('brand').setAttribute('aria-current', 'page'); else $('brand').removeAttribute('aria-current');
     $('summary').hidden = !['overview', 'category', 'market'].includes(id);
     if (location.hash !== '#' + id) history.pushState(null, '', '#' + id);
   }
@@ -626,9 +626,9 @@ footer a { color: inherit; }
   document.addEventListener('click', (e) => { if (menu.classList.contains('open') && !menu.contains(e.target)) setMenu(false); });
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setMenu(false); });
   document.querySelectorAll('.tab').forEach((b) => b.addEventListener('click', () => { show(b.dataset.tab); setMenu(false); window.scrollTo({ top: 0 }); }));
-  $('brand').addEventListener('click', (e) => { e.preventDefault(); show('overview'); setMenu(false); window.scrollTo({ top: 0, behavior: 'smooth' }); });
-  const h = location.hash.replace('#', ''); if (['overview', 'category', 'market', 'fatwa', 'faq', 'about'].includes(h)) show(h);
-  const fromHash = () => { const t = location.hash.replace('#', '') || 'overview'; if (['overview', 'category', 'market', 'fatwa', 'faq', 'about'].includes(t)) { show(t); window.scrollTo({ top: 0 }); } };
+  $('brand').addEventListener('click', (e) => { e.preventDefault(); show('market'); setMenu(false); window.scrollTo({ top: 0, behavior: 'smooth' }); });
+  const h = location.hash.replace('#', ''); if (['overview', 'category', 'market', 'fatwa', 'faq', 'about'].includes(h)) show(h); else { history.replaceState(null, '', '#market'); show('market'); }
+  const fromHash = () => { const t = location.hash.replace('#', '') || 'market'; if (['overview', 'category', 'market', 'fatwa', 'faq', 'about'].includes(t)) { show(t); window.scrollTo({ top: 0 }); } };
   window.addEventListener('hashchange', fromHash); window.addEventListener('popstate', fromHash);
 
   Promise.all([getCSV('data/coins.csv'), getCSV('data/categories.csv'), getCSV('data/estimates.csv'), getCSV('data/halal_map.csv'),
