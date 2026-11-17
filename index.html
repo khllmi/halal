@@ -201,7 +201,15 @@ tr:last-child td { border-bottom: 0; }
 .qa .faq-body p:last-child { margin-bottom: 0; }
 .faq-body a { color: var(--ok); }
 /* Top 500 table: one line per row, category detail in a popover */
-#market table td { vertical-align: middle; white-space: nowrap; height: 46px; padding-top: 0; padding-bottom: 0; }
+#market table td { vertical-align: middle; white-space: nowrap; height: 56px; padding-top: 0; padding-bottom: 0; }
+.coin { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.coin-logo { width: 28px; height: 28px; border-radius: 50%; flex: none; background: var(--grid); object-fit: cover; }
+.coin-logo.fallback { display: inline-grid; place-items: center; font-size: 11px; font-weight: 700; color: var(--muted); }
+.coin-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; line-height: 1.2; }
+.coin-name { color: var(--fg); text-decoration: none; font-weight: 600; overflow: hidden; text-overflow: ellipsis; max-width: 220px; }
+.coin-name:hover { text-decoration: underline; }
+.coin-sub { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; color: var(--muted); opacity: .8; }
+.coin-sub .dot { width: 7px; height: 7px; opacity: .85; }
 #market table .badge { line-height: 1; }
 .cat-btn { appearance: none; background: none; border: 0; padding: 0; font: inherit; font-size: 13px; color: var(--muted); cursor: help; display: inline-flex; align-items: center; gap: 5px; text-decoration: underline dotted; text-underline-offset: 3px; text-decoration-color: color-mix(in srgb, var(--muted) 60%, transparent); }
 .cat-btn:hover, .cat-btn[aria-expanded="true"] { color: var(--fg); }
@@ -797,7 +805,14 @@ footer a { color: inherit; }
           btn.dataset.title = (r.category || 'Unrated') + ' · ' + r.name; btn.dataset.body = r.reason; btn.dataset.src = r.basis;
           catTd.append(btn);
         } else catTd.textContent = r.category || '—';
-        const nameTd = el('td', 'nw'); const a = el('a', '', r.name); a.href = 'https://coinmarketcap.com/currencies/' + r.slug + '/'; a.target = '_blank'; a.rel = 'noopener'; a.style.color = 'inherit'; nameTd.append(a);
+        const nameTd = el('td', 'nw'); const coin = el('div', 'coin');
+        const logo = el('img', 'coin-logo'); logo.alt = ''; logo.loading = 'lazy'; logo.decoding = 'async'; logo.width = 28; logo.height = 28;
+        logo.src = 'https://s2.coinmarketcap.com/static/img/coins/64x64/' + r.id + '.png';
+        logo.addEventListener('error', () => { const f = el('span', 'coin-logo fallback', String(r.symbol || '?').slice(0, 2).toUpperCase()); logo.replaceWith(f); }, { once: true });
+        const txt = el('div', 'coin-text');
+        const a = el('a', 'coin-name', r.name); a.href = 'https://coinmarketcap.com/currencies/' + r.slug + '/'; a.target = '_blank'; a.rel = 'noopener'; a.title = r.name;
+        const sub = el('span', 'coin-sub'); sub.append(el('i', 'dot ' + (DOT[r.status] || '')), el('span', '', r.status));
+        txt.append(a, sub); coin.append(logo, txt); nameTd.append(coin);
         tr.append(el('td', 'num', r.rank ?? '—'), nameTd, el('td', 'tick', r.symbol), el('td', 'num', price(r.price)),
           el('td', 'num ' + (r.pct24 >= 0 ? 'up' : 'down'), pct(r.pct24)), el('td', 'num ' + (r.pct7d >= 0 ? 'up' : 'down'), pct(r.pct7d)),
           el('td', 'num', big(r.mcap)), el('td', 'num', big(r.fdv)), stTd, catTd, el('td', 'src' + (r.basis === 'Estimate' ? ' est' : ''), r.basis));
