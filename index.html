@@ -201,7 +201,18 @@ tr:last-child td { border-bottom: 0; }
 .qa .faq-body p { margin: 0 0 8px; }
 .qa .faq-body p:last-child { margin-bottom: 0; }
 .faq-body a { color: var(--ok); }
-.why { display: block; font-size: 12px; color: var(--muted); margin-top: 3px; min-width: 220px; line-height: 1.4; }
+/* Top 500 table: one line per row, category detail in a popover */
+#market table td { vertical-align: middle; white-space: nowrap; height: 46px; padding-top: 0; padding-bottom: 0; }
+#market table .badge { line-height: 1; }
+.cat-btn { appearance: none; background: none; border: 0; padding: 0; font: inherit; font-size: 13px; color: var(--muted); cursor: help; display: inline-flex; align-items: center; gap: 5px; text-decoration: underline dotted; text-underline-offset: 3px; text-decoration-color: color-mix(in srgb, var(--muted) 60%, transparent); }
+.cat-btn:hover, .cat-btn[aria-expanded="true"] { color: var(--fg); }
+.cat-btn .i { display: inline-grid; place-items: center; width: 15px; height: 15px; border-radius: 50%; font-size: 10px; font-weight: 700; font-style: normal; color: var(--ok); border: 1px solid color-mix(in srgb, var(--ok) 50%, transparent); text-decoration: none; flex: none; }
+.cat-btn.est .i { color: var(--warn); border-color: color-mix(in srgb, var(--warn) 55%, transparent); }
+.pop { position: fixed; z-index: 60; max-width: min(340px, calc(100vw - 24px)); background: var(--panel); color: var(--fg); border: 1px solid var(--line); border-radius: 10px; box-shadow: var(--shadow), 0 2px 6px rgba(0,0,0,.08); padding: 12px 14px; font-size: 13.5px; line-height: 1.5; white-space: normal; }
+.pop[hidden] { display: none; }
+.pop .pt { font-weight: 700; margin-bottom: 4px; display: flex; align-items: center; gap: 6px; }
+.pop .pb { color: var(--muted); }
+.pop .ps { margin-top: 8px; font-size: 12px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 6px; }
 .src { font-size: 12px; white-space: nowrap; color: var(--muted); }
 .src.est { color: var(--warn); }
 .up { color: var(--ok); } .down { color: var(--bad); }
@@ -731,7 +742,41 @@ footer a { color: inherit; }
     if (market.source === 'coinmarketcap') { $('m-asof').textContent = 'CoinMarketCap prices as of ' + when + ' (refreshed about every 20 minutes). Sorted by live rank.'; $('m-dot').classList.toggle('stale', ageMin > 90); }
     else { $('m-asof').textContent = 'Snapshot from ' + when + '. Live updates start once the CoinMarketCap API key is added.'; $('m-dot').classList.add('stale'); }
 
+    // Category detail popover (hover with a mouse, tap on touch screens)
+    const pop = el('div', 'pop'); pop.hidden = true; pop.setAttribute('role', 'dialog'); document.body.append(pop);
+    let popFor = null, hideT = null;
+    const placePop = (btn) => {
+      const r = btn.getBoundingClientRect(), w = pop.offsetWidth, h = pop.offsetHeight, pad = 12;
+      let left = Math.min(Math.max(pad, r.left), window.innerWidth - w - pad);
+      let top = r.bottom + 8; if (top + h > window.innerHeight - pad) top = Math.max(pad, r.top - h - 8);
+      pop.style.left = left + 'px'; pop.style.top = top + 'px';
+    };
+    const openPop = (btn) => {
+      clearTimeout(hideT);
+      if (popFor && popFor !== btn) popFor.setAttribute('aria-expanded', 'false');
+      popFor = btn; btn.setAttribute('aria-expanded', 'true');
+      pop.replaceChildren(el('div', 'pt', btn.dataset.title), el('div', 'pb', btn.dataset.body), el('div', 'ps', 'Source: ' + btn.dataset.src));
+      pop.hidden = false; placePop(btn);
+    };
+    const closePop = () => { clearTimeout(hideT); pop.hidden = true; if (popFor) popFor.setAttribute('aria-expanded', 'false'); popFor = null; };
+    const body500 = $('m-rows');
+    const hoverOK = window.matchMedia && matchMedia('(hover: hover)').matches;
+    if (hoverOK) {
+      body500.addEventListener('mouseover', (e) => { const b = e.target.closest('.cat-btn'); if (b) openPop(b); });
+      body500.addEventListener('mouseout', (e) => { const b = e.target.closest('.cat-btn'); if (b && !b.contains(e.relatedTarget)) hideT = setTimeout(closePop, 120); });
+      pop.addEventListener('mouseenter', () => clearTimeout(hideT));
+      pop.addEventListener('mouseleave', () => { hideT = setTimeout(closePop, 120); });
+    }
+    body500.addEventListener('click', (e) => { const b = e.target.closest('.cat-btn'); if (!b) return; e.stopPropagation(); if (popFor === b && !hoverOK) closePop(); else openPop(b); });
+    body500.addEventListener('focusin', (e) => { const b = e.target.closest('.cat-btn'); if (b && b.matches(':focus-visible')) openPop(b); });
+    body500.addEventListener('focusout', (e) => { if (e.target.closest('.cat-btn')) hideT = setTimeout(closePop, 120); });
+    document.addEventListener('click', (e) => { if (popFor && !pop.contains(e.target)) closePop(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closePop(); });
+    window.addEventListener('scroll', closePop, { passive: true });
+    document.querySelectorAll('#market .tablewrap').forEach((w) => w.addEventListener('scroll', closePop, { passive: true }));
+
     function renderMarket() {
+      closePop();
       const { q, status, basis, sort, dir } = S.m;
       const f = rows.filter((r) => (!status || r.status === status) && (!basis || (basis === 'est' ? r.basis === 'Estimate' : r.basis !== 'Estimate')) &&
         (!q || String(r.name).toLowerCase().includes(q) || String(r.symbol).toLowerCase().includes(q)));
@@ -745,7 +790,14 @@ footer a { color: inherit; }
       const frag = document.createDocumentFragment();
       pageRows.forEach((r) => {
         const tr = el('tr'); const stTd = el('td'); stTd.append(badge(r.status));
-        const catTd = el('td', 'cat', r.category || '—'); if (r.reason) catTd.append(el('span', 'why', r.reason));
+        const catTd = el('td', 'cat');
+        if (r.reason) {
+          const btn = el('button', 'cat-btn' + (r.basis === 'Estimate' ? ' est' : '')); btn.type = 'button';
+          btn.append(el('span', '', r.category || 'Unrated'), el('i', 'i', 'i'));
+          btn.setAttribute('aria-haspopup', 'dialog'); btn.setAttribute('aria-expanded', 'false');
+          btn.dataset.title = (r.category || 'Unrated') + ' · ' + r.name; btn.dataset.body = r.reason; btn.dataset.src = r.basis;
+          catTd.append(btn);
+        } else catTd.textContent = r.category || '—';
         const nameTd = el('td', 'nw'); const a = el('a', '', r.name); a.href = 'https://coinmarketcap.com/currencies/' + r.slug + '/'; a.target = '_blank'; a.rel = 'noopener'; a.style.color = 'inherit'; nameTd.append(a);
         tr.append(el('td', 'num', r.rank ?? '—'), nameTd, el('td', 'tick', r.symbol), el('td', 'num', price(r.price)),
           el('td', 'num ' + (r.pct24 >= 0 ? 'up' : 'down'), pct(r.pct24)), el('td', 'num ' + (r.pct7d >= 0 ? 'up' : 'down'), pct(r.pct7d)),
