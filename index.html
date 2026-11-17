@@ -90,6 +90,13 @@ details summary { cursor: pointer; font-size: 13px; color: var(--muted); }
 details p { font-size: 13px; color: var(--muted); margin: 8px 0 0; }
 footer { font-size: 12px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 14px; }
 footer a { color: inherit; }
+.pager { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; }
+.pager .info { font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.pager .pages { display: flex; flex-wrap: wrap; gap: 4px; }
+.pager button { appearance: none; font: inherit; font-size: 14px; min-width: 36px; height: 36px; padding: 0 10px; border: 1px solid var(--line); background: var(--panel); color: var(--fg); border-radius: 8px; cursor: pointer; font-variant-numeric: tabular-nums; }
+.pager button.on { background: var(--accent); color: var(--bg); border-color: var(--accent); font-weight: 600; }
+.pager button:disabled { opacity: .4; cursor: default; }
+.pager[hidden] { display: none; }
 .skeleton { color: transparent !important; background: var(--grid); border-radius: 4px; }
 </style>
 </head>
@@ -137,6 +144,7 @@ footer a { color: inherit; }
     <div class="tablewrap">
       <table><thead><tr><th>Coin</th><th>Ticker</th><th>Category</th><th>Verdict</th><th class="num">Score</th></tr></thead><tbody id="c-rows"></tbody></table>
     </div>
+    <nav class="pager" id="c-pager" aria-label="Category table pages"></nav>
   </section>
 
   <section id="market" hidden>
@@ -164,6 +172,7 @@ footer a { color: inherit; }
         <tbody id="m-rows"></tbody>
       </table>
     </div>
+    <nav class="pager" id="m-pager" aria-label="Top 500 table pages"></nav>
   </section>
 
   <details>
@@ -199,7 +208,28 @@ footer a { color: inherit; }
   }
   const getCSV = (p) => fetch(p, { cache: 'no-cache' }).then((r) => { if (!r.ok) throw new Error(p); return r.text(); }).then(parseCSV);
 
-  const S = { cat: '', q: '', status: '', m: { q: '', status: '', basis: '', sort: 'rank', dir: 1 } };
+  const S = { cat: '', q: '', status: '', page: 1, m: { q: '', status: '', basis: '', sort: 'rank', dir: 1, page: 1 } };
+  const PER_PAGE = 100;
+
+  // Slices `list` to the current page and draws the page buttons below the table.
+  function paginate(list, st, pagerId, onChange, tableBody) {
+    const pages = Math.max(1, Math.ceil(list.length / PER_PAGE));
+    if (st.page > pages) st.page = pages;
+    const start = (st.page - 1) * PER_PAGE, slice = list.slice(start, start + PER_PAGE);
+    const nav = $(pagerId); nav.replaceChildren(); nav.hidden = list.length === 0;
+    if (!list.length) return slice;
+    nav.append(el('span', 'info', 'Showing ' + fmtInt(start + 1) + '–' + fmtInt(start + slice.length) + ' of ' + fmtInt(list.length)));
+    const box = el('div', 'pages');
+    const go = (p) => { st.page = p; onChange(); const wrap = tableBody.closest('.tablewrap'); wrap.scrollTop = 0; wrap.scrollIntoView({ block: 'start', behavior: 'smooth' }); };
+    const btn = (label, p, opts = {}) => { const b = el('button', opts.on ? 'on' : '', label); b.type = 'button';
+      if (opts.aria) b.setAttribute('aria-label', opts.aria); if (opts.on) b.setAttribute('aria-current', 'page');
+      b.disabled = !!opts.disabled; if (!opts.disabled && !opts.on) b.addEventListener('click', () => go(p)); box.append(b); };
+    btn('‹', st.page - 1, { disabled: st.page === 1, aria: 'Previous page' });
+    for (let p = 1; p <= pages; p++) btn(String(p), p, { on: p === st.page, aria: 'Page ' + p });
+    btn('›', st.page + 1, { disabled: st.page === pages, aria: 'Next page' });
+    nav.append(box);
+    return slice;
+  }
 
   function badge(status) { const b = el('span', 'badge'); b.append(el('i', 'dot ' + (DOT[status] || '')), el('span', '', status)); return b; }
   function price(v) { if (v === null || v === undefined) return '—'; if (v >= 1) return '$' + v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); return '$' + Number(v.toPrecision(3)).toString(); }
@@ -247,7 +277,7 @@ footer a { color: inherit; }
         tip.style.top = (ev.clientY - box.top + 14) + 'px';
       });
       b.addEventListener('mouseleave', () => { tip.hidden = true; });
-      b.addEventListener('click', () => { S.cat = r.category; renderCat(); show('category'); window.scrollTo({ top: 0 }); });
+      b.addEventListener('click', () => { S.cat = r.category; S.page = 1; renderCat(); show('category'); window.scrollTo({ top: 0 }); });
       bars.append(b);
     });
     bars.append(tip);
@@ -256,7 +286,7 @@ footer a { color: inherit; }
     function renderCat() {
       const chips = $('chips'); chips.replaceChildren();
       const mk = (val, label, n) => { const b = el('button', 'chip' + (S.cat === val ? ' on' : '')); b.type = 'button';
-        b.append(el('span', '', label), el('span', 'c', fmtInt(n))); b.addEventListener('click', () => { S.cat = val; renderCat(); }); chips.append(b); };
+        b.append(el('span', '', label), el('span', 'c', fmtInt(n))); b.addEventListener('click', () => { S.cat = val; S.page = 1; renderCat(); }); chips.append(b); };
       mk('', 'All', T.total); catSum.forEach((r) => mk(r.category, r.category, r.total));
       const s = S.cat ? catSum.find((r) => r.category === S.cat) : T;
       $('i-name').textContent = S.cat || 'All categories';
@@ -277,14 +307,15 @@ footer a { color: inherit; }
       const f = coins.filter((r) => (!S.cat || r.category === S.cat) && (!st || r.status === st) && (!q || r.name.toLowerCase().includes(q) || r.ticker.toLowerCase().includes(q)));
       $('c-count').textContent = fmtInt(f.length) + (f.length === 1 ? ' coin' : ' coins');
       const body = $('c-rows'); body.replaceChildren();
+      const pageRows = paginate(f, S, 'c-pager', renderCatRows, body);
       if (!f.length) { const tr = el('tr'); const td = el('td', 'cat', 'No coins match.'); td.colSpan = 5; tr.append(td); body.append(tr); return; }
       const frag = document.createDocumentFragment();
-      f.forEach((r) => { const tr = el('tr'); const stTd = el('td'); stTd.append(badge(r.status));
+      pageRows.forEach((r) => { const tr = el('tr'); const stTd = el('td'); stTd.append(badge(r.status));
         tr.append(el('td', '', r.name), el('td', 'tick', r.ticker), el('td', 'cat', r.category), stTd, el('td', 'num', r.score)); frag.append(tr); });
       body.append(frag);
     }
-    $('c-q').addEventListener('input', (e) => { S.q = e.target.value.trim().toLowerCase(); renderCatRows(); });
-    $('c-status').addEventListener('change', (e) => { S.status = e.target.value; renderCatRows(); });
+    $('c-q').addEventListener('input', (e) => { S.q = e.target.value.trim().toLowerCase(); S.page = 1; renderCatRows(); });
+    $('c-status').addEventListener('change', (e) => { S.status = e.target.value; S.page = 1; renderCatRows(); });
     renderCat();
 
     // ---------- Top 500 ----------
@@ -330,9 +361,10 @@ footer a { color: inherit; }
       $('m-count').textContent = fmtInt(f.length) + (f.length === 1 ? ' coin' : ' coins');
       document.querySelectorAll('#m-head th.sortable').forEach((th) => { const a = th.querySelector('.arrow'); if (a) a.remove(); if (th.dataset.k === sort) th.append(el('span', 'arrow', dir > 0 ? ' ▲' : ' ▼')); });
       const body = $('m-rows'); body.replaceChildren();
+      const pageRows = paginate(f, S.m, 'm-pager', renderMarket, body);
       if (!f.length) { const tr = el('tr'); const td = el('td', 'cat', 'No coins match.'); td.colSpan = 11; tr.append(td); body.append(tr); return; }
       const frag = document.createDocumentFragment();
-      f.forEach((r) => {
+      pageRows.forEach((r) => {
         const tr = el('tr'); const stTd = el('td'); stTd.append(badge(r.status));
         const catTd = el('td', 'cat', r.category || '—'); if (r.reason) catTd.append(el('span', 'why', r.reason));
         const nameTd = el('td', 'nw'); const a = el('a', '', r.name); a.href = 'https://coinmarketcap.com/currencies/' + r.slug + '/'; a.target = '_blank'; a.rel = 'noopener'; a.style.color = 'inherit'; nameTd.append(a);
@@ -344,10 +376,10 @@ footer a { color: inherit; }
       body.append(frag);
     }
     document.querySelectorAll('#m-head th.sortable').forEach((th) => th.addEventListener('click', () => {
-      const k = th.dataset.k; if (S.m.sort === k) S.m.dir *= -1; else { S.m.sort = k; S.m.dir = ['rank', 'name', 'status'].includes(k) ? 1 : -1; } renderMarket(); }));
-    $('m-q').addEventListener('input', (e) => { S.m.q = e.target.value.trim().toLowerCase(); renderMarket(); });
-    $('m-status').addEventListener('change', (e) => { S.m.status = e.target.value; renderMarket(); });
-    $('m-basis').addEventListener('change', (e) => { S.m.basis = e.target.value; renderMarket(); });
+      const k = th.dataset.k; if (S.m.sort === k) S.m.dir *= -1; else { S.m.sort = k; S.m.dir = ['rank', 'name', 'status'].includes(k) ? 1 : -1; } S.m.page = 1; renderMarket(); }));
+    $('m-q').addEventListener('input', (e) => { S.m.q = e.target.value.trim().toLowerCase(); S.m.page = 1; renderMarket(); });
+    $('m-status').addEventListener('change', (e) => { S.m.status = e.target.value; S.m.page = 1; renderMarket(); });
+    $('m-basis').addEventListener('change', (e) => { S.m.basis = e.target.value; S.m.page = 1; renderMarket(); });
     renderMarket();
   }
 })();
