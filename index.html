@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#5cb88b">
+<meta name="theme-color" content="#2f7d5b" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#5cb88b" media="(prefers-color-scheme: dark)">
 <title>Halal Crypto Screener</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,10 +26,12 @@
   --ok: #2f7d5b; --warn: #b7791f; --bad: #b4443a; --accent: #1d1c1a; --shadow: 0 6px 24px rgba(0,0,0,.08);
   --serif: "Fraunces", "Iowan Old Style", Georgia, serif;
   --sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-  --brand: #5cb88b; --brand-ink: #0f2e1c; --brand-soft: rgba(15,46,28,.10); --brand-line: rgba(15,46,28,.22);
+  /* Header follows the Halal green of each theme */
+  --brand: var(--ok); --brand-ink: #ffffff; --brand-soft: rgba(255,255,255,.14); --brand-line: rgba(255,255,255,.30);
 }
 :root[data-theme="dark"] { --bg: #161614; --panel: #1f1e1b; --fg: #eeece6; --muted: #a29f96; --line: #33312c; --grid: #2a2925;
-  --ok: #5cb88b; --warn: #e0a84a; --bad: #e07a6f; --accent: #eeece6; --shadow: 0 6px 24px rgba(0,0,0,.4); color-scheme: dark; }
+  --ok: #5cb88b; --warn: #e0a84a; --bad: #e07a6f; --accent: #eeece6; --shadow: 0 6px 24px rgba(0,0,0,.4); color-scheme: dark;
+  --brand-ink: #0f2e1c; --brand-soft: rgba(15,46,28,.10); --brand-line: rgba(15,46,28,.22); }
 :root[data-theme="light"] { color-scheme: light; }
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--sans); font-size: 15px; line-height: 1.5; }
@@ -38,7 +41,7 @@ h1 { font-family: var(--serif); font-weight: 400; font-size: 34px; margin: 0; le
 .lede b { color: var(--fg); font-variant-numeric: tabular-nums; }
 body, .card, .topbar, .tablewrap, th { transition: background-color .2s ease, color .2s ease, border-color .2s ease; }
 /* Fixed top bar: title (= Overview), menu, theme switch; on mobile the menu folds into a drop-down */
-.topbar { position: sticky; top: 0; z-index: 30; background: var(--brand); color: var(--brand-ink); box-shadow: 0 1px 0 rgba(0,0,0,.08), 0 6px 20px rgba(92,184,139,.25); }
+.topbar { position: sticky; top: 0; z-index: 30; background: var(--brand); color: var(--brand-ink); box-shadow: 0 1px 0 rgba(0,0,0,.08), 0 6px 20px color-mix(in srgb, var(--brand) 25%, transparent); }
 .topbar-inner { position: relative; max-width: 1120px; margin: 0 auto; padding: 0 18px; display: flex; align-items: center; gap: 28px; min-height: 58px; }
 .brand { appearance: none; background: none; border: 0; padding: 0; color: var(--brand-ink); cursor: pointer; font-family: var(--serif); font-size: 22px; white-space: nowrap; margin: 0; font-weight: 600; letter-spacing: -.01em; display: flex; align-items: center; gap: 8px; text-decoration: none; }
 .brand svg { flex: none; }
@@ -46,7 +49,7 @@ body, .card, .topbar, .tablewrap, th { transition: background-color .2s ease, co
 .brand:hover .brand-text { text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px; }
 .menu { flex: 1; display: flex; align-items: stretch; justify-content: space-between; gap: 16px; align-self: stretch; }
 .tabs { display: flex; gap: 2px; }
-.tab { appearance: none; background: none; border: 0; border-bottom: 3px solid transparent; padding: 0 12px; font: inherit; font-weight: 500; color: rgba(15,46,28,.72); cursor: pointer; white-space: nowrap; min-height: 44px; text-align: left; }
+.tab { appearance: none; background: none; border: 0; border-bottom: 3px solid transparent; padding: 0 12px; font: inherit; font-weight: 500; color: color-mix(in srgb, var(--brand-ink) 76%, transparent); cursor: pointer; white-space: nowrap; min-height: 44px; text-align: left; }
 .tab:hover { color: var(--brand-ink); }
 .tab.on { color: var(--brand-ink); border-bottom-color: var(--brand-ink); font-weight: 700; }
 .theme-row { display: flex; align-items: center; gap: 10px; }
@@ -77,6 +80,8 @@ body, .card, .topbar, .tablewrap, th { transition: background-color .2s ease, co
   .theme-label { display: inline; font-size: 16px; }
 }
 section[hidden] { display: none; }
+section { scroll-margin-top: 84px; }
+.note a { color: var(--ok); font-weight: 600; }
 section { display: flex; flex-direction: column; gap: 18px; }
 .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
 .card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 18px; }
@@ -126,6 +131,34 @@ tr:last-child td { border-bottom: 0; }
 .tick { color: var(--muted); font-size: 13px; }
 .badge { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
 .cat { color: var(--muted); font-size: 13px; }
+/* FAQ page */
+.faq-hero { padding: 6px 0 2px; }
+.eyebrow { font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--ok); margin: 0 0 6px; }
+.faq-title { font-family: var(--serif); font-weight: 500; font-size: clamp(26px, 5vw, 36px); line-height: 1.15; margin: 0 0 12px; letter-spacing: -.01em; }
+.faq-lead { color: var(--muted); max-width: 760px; margin: 0; font-size: 16px; }
+.faq-lead b, .faq-body b { color: var(--fg); }
+.pillars { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+.pillar { position: relative; overflow: hidden; }
+.pillar .no { font-family: var(--serif); font-size: 40px; font-weight: 500; color: var(--ok); line-height: 1; opacity: .9; }
+.pillar h3 { font-size: 17px; margin: 10px 0 2px; }
+.pillar .ar { font-family: var(--serif); font-style: italic; color: var(--muted); font-size: 14px; margin-bottom: 8px; }
+.pillar p { margin: 0 0 10px; color: var(--muted); font-size: 14px; }
+.ref { display: inline-block; font-size: 12px; font-weight: 600; color: var(--ok); border: 1px solid color-mix(in srgb, var(--ok) 35%, transparent); background: color-mix(in srgb, var(--ok) 8%, transparent); border-radius: 999px; padding: 2px 10px; }
+.verdicts { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; margin-top: 4px; }
+.verdict { border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; background: var(--panel); }
+.verdict .badge { font-weight: 700; margin-bottom: 4px; }
+.verdict p { margin: 0; font-size: 14px; color: var(--muted); }
+.note { border-left: 3px solid var(--warn); background: color-mix(in srgb, var(--warn) 8%, var(--panel)); padding: 12px 16px; border-radius: 0 10px 10px 0; font-size: 14px; }
+.qa { border: 1px solid var(--line); border-radius: 10px; background: var(--panel); }
+.qa + .qa { margin-top: 8px; }
+.qa summary { list-style: none; cursor: pointer; padding: 14px 44px 14px 16px; font-weight: 600; font-size: 15px; color: var(--fg); position: relative; }
+.qa summary::-webkit-details-marker { display: none; }
+.qa summary::after { content: ""; position: absolute; right: 18px; top: 50%; width: 9px; height: 9px; border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted); transform: translateY(-70%) rotate(45deg); transition: transform .2s ease; }
+.qa[open] summary::after { transform: translateY(-30%) rotate(-135deg); }
+.qa .faq-body { padding: 0 16px 14px; color: var(--muted); font-size: 14.5px; }
+.qa .faq-body p { margin: 0 0 8px; }
+.qa .faq-body p:last-child { margin-bottom: 0; }
+.faq-body a { color: var(--ok); }
 .why { display: block; font-size: 12px; color: var(--muted); margin-top: 3px; min-width: 220px; line-height: 1.4; }
 .src { font-size: 12px; white-space: nowrap; color: var(--muted); }
 .src.est { color: var(--warn); }
@@ -153,7 +186,7 @@ footer a { color: inherit; }
 <body>
 <header class="topbar">
   <div class="topbar-inner">
-    <a class="brand" href="#overview" id="brand" title="Overview"><svg width="22" height="22" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="#0f2e1c"/><path d="M10 16.5l4 4 8-9" stroke="#5cb88b" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-text">Halal Crypto Screener</span></a>
+    <a class="brand" href="#overview" id="brand" title="Overview"><svg width="22" height="22" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="var(--brand-ink)"/><path d="M10 16.5l4 4 8-9" stroke="var(--brand)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-text">Halal Crypto Screener</span></a>
     <button class="burger" id="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="menu">
       <svg class="lines" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
       <svg class="x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
@@ -162,6 +195,7 @@ footer a { color: inherit; }
       <nav class="tabs" role="tablist" aria-label="Sections">
         <button class="tab" data-tab="category" role="tab">Category</button>
         <button class="tab" data-tab="market" role="tab">Top 500 (CMC)</button>
+        <button class="tab" data-tab="faq" role="tab">FAQ</button>
       </nav>
       <div class="theme-row">
         <span class="theme-label" id="theme-label">Dark mode</span>
@@ -237,6 +271,88 @@ footer a { color: inherit; }
       </table>
     </div>
     <nav class="pager" id="m-pager" aria-label="Top 500 table pages"></nav>
+  </section>
+
+  <section id="faq" hidden>
+    <div class="faq-hero">
+      <p class="eyebrow">How we screen</p>
+      <h2 class="faq-title">One set of rules for every coin</h2>
+      <p class="faq-lead">Each coin is judged by what its project actually does, against the core prohibitions of Islamic commercial law (fiqh al-mu'amalat). A coin is marked <b>Halal</b> only when its main activity is permissible and stays clear of the three things Shariah forbids in a financial instrument.</p>
+    </div>
+
+    <div class="pillars">
+      <div class="card pillar">
+        <div class="no">01</div>
+        <h3>Riba</h3>
+        <div class="ar">interest</div>
+        <p>Projects that mainly earn from interest: lending and borrowing at interest, fixed or guaranteed yields, and yield-bearing dollars backed by debt or funding rates.</p>
+        <span class="ref">Qur'an 2:275</span>
+      </div>
+      <div class="card pillar">
+        <div class="no">02</div>
+        <h3>Maysir</h3>
+        <div class="ar">gambling</div>
+        <p>Tokens built for betting, casinos, prediction markets or games of chance, where one side's gain comes from another's loss on an uncertain outcome.</p>
+        <span class="ref">Qur'an 5:90</span>
+      </div>
+      <div class="card pillar">
+        <div class="no">03</div>
+        <h3>Gharar</h3>
+        <div class="ar">excessive uncertainty</div>
+        <p>Projects whose value or mechanics are unclear or hidden, and assets bought on hype alone. These aren't banned outright but are treated with caution.</p>
+        <span class="ref">Sahih Muslim 1513</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>The three verdicts</h2>
+      <p class="sub">Coins that don't clearly pass aren't dropped from the list. They are marked so you can decide with the full picture.</p>
+      <div class="verdicts">
+        <div class="verdict"><div class="badge"><i class="dot ok"></i>Halal</div><p>The project's main use is permissible: blockchains, infrastructure, payments, spot exchanges, games. Score 85/100.</p></div>
+        <div class="verdict"><div class="badge"><i class="dot warn"></i>Doubtful</div><p>Scholars disagree, or the project mixes permissible and doubtful activity: stablecoins, staking, DeFi, meme coins, privacy coins, tokenised stocks. Score 50/100.</p></div>
+        <div class="verdict"><div class="badge"><i class="dot bad"></i>Not Halal</div><p>The project's core is interest, leverage or gambling: lending protocols, perpetual-futures exchanges, tokenised debt, betting. Score 0/100.</p></div>
+      </div>
+    </div>
+
+    <p class="note">This is a screening tool, not a fatwa. Verdicts follow <a href="https://halalscreener.app/en/halal-crypto" target="_blank" rel="noopener">HalalScreener</a>'s category rulings, and coins it hasn't rated are estimated with the same rules. Always do your own research and ask a qualified scholar before making a financial decision.</p>
+
+    <div>
+      <p class="eyebrow">Frequently asked</p>
+      <h2 class="faq-title" style="font-size: clamp(22px, 4vw, 28px)">Halal crypto questions</h2>
+      <details class="qa" open><summary>Is crypto trading halal?</summary><div class="faq-body">
+        <p>Many contemporary scholars allow <b>spot</b> buying and selling of cryptocurrencies whose underlying project is permissible, as long as the trade settles immediately and you own what you bought.</p>
+        <p>Leverage, margin, futures, options and short selling are generally not permitted, because they involve interest, debt or selling what you don't own. This applies whatever coin you trade.</p>
+      </div></details>
+      <details class="qa"><summary>Is Bitcoin halal?</summary><div class="faq-body">
+        <p>Most screens, including HalalScreener, rate Bitcoin <b>Halal</b>. It is a decentralised network for holding and sending value, and nothing in its protocol pays interest or involves gambling.</p>
+        <p>A minority of scholars consider all cryptocurrencies impermissible, mainly because of volatility and the lack of an issuer. This screen follows the majority view but you should know the debate exists.</p>
+      </div></details>
+      <details class="qa"><summary>Are exchanges and exchange tokens halal?</summary><div class="faq-body">
+        <p>Using an exchange for spot trading in permissible coins is generally accepted. Avoid futures, margin, lending, "earn" products with a fixed yield and any product that pays interest.</p>
+        <p>Exchange tokens such as BNB or OKB are rated <b>Halal</b> here because their main use is fee discounts and access. Stricter scholars look through to the exchange's whole business, including its derivatives desk, and may disagree.</p>
+      </div></details>
+      <details class="qa"><summary>Is staking halal?</summary><div class="faq-body">
+        <p>It depends on the mechanism. Rewards for helping secure a network (proof of stake) are seen by many scholars as payment for work, but some liken them to interest. That is why liquid staking and restaking are rated <b>Doubtful</b>.</p>
+        <p>Products that lend your coins out or promise a fixed return are treated as interest and rated <b>Not Halal</b>.</p>
+      </div></details>
+      <details class="qa"><summary>Are stablecoins halal?</summary><div class="faq-body">
+        <p>Stablecoins are rated <b>Doubtful</b>. They are useful for settling trades, but most issuers earn interest on the reserves backing them, and some keep their peg through lending. Yield-bearing dollars that pay you interest or funding-rate income are rated <b>Not Halal</b>.</p>
+      </div></details>
+      <details class="qa"><summary>How many halal cryptocurrencies are there?</summary><div class="faq-body">
+        <p>Across HalalScreener's categories, <b id="f-halal">—</b> of <b id="f-total">—</b> coins are rated Halal, <b id="f-doubt">—</b> Doubtful and <b id="f-bad">—</b> Not Halal.</p>
+        <p>Of CoinMarketCap's current top <b id="f-mtotal">—</b>, <b id="f-mhalal">—</b> are Halal. The counts change as coins move in and out of the top 500.</p>
+      </div></details>
+      <details class="qa"><summary>What do "Estimate" and "Unrated" mean?</summary><div class="faq-body">
+        <p>HalalScreener hasn't rated every coin. For a top-500 coin it doesn't cover, the verdict marked <b>Estimate</b> applies the rule of the HalalScreener category the project most resembles, with the reason shown under its category. It is not a HalalScreener verdict.</p>
+        <p><b>Unrated</b> means there wasn't enough public information about the project to place it. Treat these with extra care.</p>
+      </div></details>
+      <details class="qa"><summary>How current are the prices and the list?</summary><div class="faq-body">
+        <p>Prices, market caps, FDV and the top-500 list come from CoinMarketCap and refresh about every 20 minutes. Category verdicts were read from HalalScreener on 17 November 2026 and are updated when its rulings change.</p>
+      </div></details>
+      <details class="qa"><summary>Is this financial or religious advice?</summary><div class="faq-body">
+        <p>No. This is a screening tool to help you narrow down choices. It is not a fatwa and not investment advice. Prices of all these coins can fall sharply. Consult a qualified scholar and do your own research.</p>
+      </div></details>
+    </div>
   </section>
 
   <details>
@@ -329,7 +445,7 @@ footer a { color: inherit; }
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setMenu(false); });
   document.querySelectorAll('.tab').forEach((b) => b.addEventListener('click', () => { show(b.dataset.tab); setMenu(false); window.scrollTo({ top: 0 }); }));
   $('brand').addEventListener('click', (e) => { e.preventDefault(); show('overview'); setMenu(false); window.scrollTo({ top: 0, behavior: 'smooth' }); });
-  const h = location.hash.replace('#', ''); if (['overview', 'category', 'market'].includes(h)) show(h);
+  const h = location.hash.replace('#', ''); if (['overview', 'category', 'market', 'faq'].includes(h)) show(h);
 
   Promise.all([getCSV('data/coins.csv'), getCSV('data/categories.csv'), getCSV('data/estimates.csv'), getCSV('data/halal_map.csv'),
     fetch('data/market.json', { cache: 'no-cache' }).then((r) => r.json())])
@@ -341,6 +457,7 @@ footer a { color: inherit; }
     const tally = (rows) => ({ total: rows.length, halal: rows.filter((c) => c.status === 'Halal').length,
       doubtful: rows.filter((c) => c.status === 'Doubtful').length, not_halal: rows.filter((c) => c.status === 'Not Halal').length });
     const T = tally(coins);
+    [['f-halal', 'halal'], ['f-total', 'total'], ['f-doubt', 'doubtful'], ['f-bad', 'not_halal']].forEach(([id, k]) => { $(id).textContent = fmtInt(T[k]); });
     [['l-halal', 'halal'], ['l-total', 'total'], ['l-doubt', 'doubtful'], ['l-bad', 'not_halal'], ['k-total', 'total'], ['k-halal', 'halal'], ['k-doubt', 'doubtful'], ['k-bad', 'not_halal']]
       .forEach(([id, k]) => { $(id).textContent = fmtInt(T[k]); $(id).classList.remove('skeleton'); });
     const catSum = categories.map((c) => ({ category: c.category, ...tally(coins.filter((x) => x.category === c.category)) }));
@@ -425,6 +542,7 @@ footer a { color: inherit; }
     const cnt = (s) => rows.filter((r) => r.status === s).length;
     $('m-coins').textContent = fmtInt(total); $('m-halal').textContent = fmtInt(cnt('Halal')); $('m-doubt').textContent = fmtInt(cnt('Doubtful'));
     $('m-bad').textContent = fmtInt(cnt('Not Halal')); $('m-unr').textContent = fmtInt(cnt('Unrated'));
+    $('f-mtotal').textContent = fmtInt(total); $('f-mhalal').textContent = fmtInt(cnt('Halal'));
     $('m-est').textContent = fmtInt(rows.filter((r) => r.basis === 'Estimate').length);
     const share = (s) => rows.filter((r) => r.status === s).reduce((a, r) => a + (r.mcap || 0), 0) / cap * 100;
     const parts = [['Halal', 'ok'], ['Doubtful', 'warn'], ['Not Halal', 'bad'], ['Unrated', '']];
